@@ -1,0 +1,55 @@
+/* Sağdan açılan panel */
+
+    .sidebar {
+        height: 100%;
+        width: 300px;
+        position: fixed;
+        right: 0;
+        top: 0;
+        background-color: #fff;
+        overflow-x: hidden;
+        transition: transform 0.4s ease;
+        padding: 60px 20px;
+        box-shadow: -2px 0 5px rgba(0, 0, 0, 0.3);
+        z-index: 9999;
+    
+        transform: translateX(100%); /* Varsayılan olarak gizli */
+        visibility: hidden;
+        opacity: 0;
+        pointer-events: none;
+    }
+    
+    .sidebar.open {
+        transform: translateX(0); /* Görünür hale gelir */
+        visibility: visible;
+        opacity: 1;
+        pointer-events: auto;
+    }
+.close-btn {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 28px;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+#loginForm {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+}
+#loginForm input {
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 16px;
+}
+#loginForm button {
+    padding: 10px;
+    font-size: 16px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}

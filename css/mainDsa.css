@@ -1,0 +1,88 @@
+/* Sayfa genel görünümü */
+
+/* Genel link stilleri (tüm sayfada geçerli) */
+a {
+  color: #e67e22;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: #ca6f1e;
+  text-decoration: underline;
+}
+
+.wd-page-content.main-page-wrapper {
+  padding: 40px 0;
+  background-color: #f7f7f7;
+}
+
+/* Konteyneri ekranı daha fazla kapsayacak şekilde genişlettik */
+.wd-content-layout.content-layout-wrapper.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+/* Ana içerik kutusu */
+.wd-content-area.site-content {
+  background-color: #ffffff;
+  padding: 50px;
+  border-radius: 16px;
+  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.06);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Başlık stili */
+article.entry-content p.p1 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #222;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+/* Alt başlık */
+article.entry-content p.p2 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 12px;
+}
+
+/* Standart metin */
+article.entry-content p.p3 {
+  font-size: 17px;
+  font-weight: 400;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+/* Bağlantılar sade ve modern hale getirildi */
+article.entry-content a {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px dashed #ccc;
+  transition: all 0.2s ease;
+}
+
+article.entry-content a:hover {
+  color: #000;
+  border-bottom-color: #999;
+  text-decoration: none;
+}
+
+/* Responsive düzeltmeler */
+@media (max-width: 992px) {
+  .wd-content-area.site-content {
+    padding: 35px 25px;
+  }
+
+  .wd-content-layout.content-layout-wrapper.container {
+    padding: 0 15px;
+  }
+
+  article.entry-content p.p1 {
+    font-size: 20px;
+  }
+}
