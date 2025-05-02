@@ -5,28 +5,29 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kadın Gömlek Modelleri-FashionShop</title>
-  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-
   <link rel="stylesheet" href="css/header.css">
   <link rel="stylesheet" href="css/products.css">
-  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/user.css">
+ 
+
 
 </head>
 
 <body>
+
   <!-- HEADER BAŞLANGIÇ -->
   <header class="main-header">
-    <div class="main-header">
-      <div class="container">
-        <div class="header-flex">
+      <div class="main-header">
+          <div class="container">
+              <div class="header-flex">
 
-          <!-- Menü Toggle Butonu (Mobil için) -->
-          <button class="menu-toggle" aria-label="Menüyü Aç/Kapat">&#9776;</button>
+                  <!-- Menü Toggle Butonu (Mobil için) -->
+                  <button class="menu-toggle" aria-label="Menüyü Aç/Kapat">&#9776;</button>
 
           <!-- SOL: LOGO -->
           <div class="logo">
             <a href="index.html">
-              <img src="images/logo.png" alt="FashionShop Logo" />
+              <img src="images/logo.jpeg" alt="FashionShop Logo" />
             </a>
           </div>
 
@@ -44,9 +45,9 @@
               <li class="dropdown">
                 <a href="#">ALT GİYİM</a>
                 <ul class="submenu">
-                  <li><a href="/pantolon">Pantolon</a></li>
-                  <li><a href="/etek">Etek</a></li>
-                  <li><a href="/sort">Şort</a></li>
+                  <li><a href="pants.html">Pantolon</a></li>
+                  <li><a href="skirt.html">Etek</a></li>
+                  <li><a href="shorts.html">Şort</a></li>
                 </ul>
               </li>
               <li class="dropdown">
@@ -63,70 +64,120 @@
           <!-- SAĞ: HESAP MENÜ -->
           <div class="hesap-menu">
             <a href="/hesabim"><img src="images/user.png" alt="Hesap" /></a>
-            <a href="/arama"><img src="images/search.png" alt="Arama" /></a>
-            <a href="/favorilerim"><img src="images/wishlist.png" alt="Favoriler" /></a>
+            <a href="/arama"><img src="images/wishlist.png" alt="Arama" /></a>
+            <a href="/favorilerim"><img src="images/search.png" alt="Favoriler" /></a>
             <a href="/sepetim"><img src="images/market.png" alt="Sepet" /></a>
           </div>
 
-        </div>
+              </div>
+          </div>
       </div>
-    </div>
+<!------------ Giriş paneli (sidebar) --------------------->
+<div id="loginSidebar" class="sidebar">
+  <button id="closeLogin" class="close-btn">×</button>
+  <form id="loginForm">
+      <h2>Giriş Yap</h2>
+      <label for="email">E-posta:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="password">Şifre:</label>
+      <input type="password" id="password" name="password" required>
+
+      <button type="submit">Giriş</button>
+  </form>
+</div>
   </header>
   <!-- HEADER BİTİŞ -->
 
-  <!-- ANA İÇERİK: Gömlek Ürünleri -->
+  <!-- ANA İÇERİK: Elbise Ürünleri -->
   <section class="product-list">
 
     <!-- Statik Ürün Kartı 1 -->
     <div class="product-card">
-      <img src="images/urunler/dress/dısney-dress.jpg" alt="Dısney Beyaz Elbise">
+      <img src="images/urunler/dress/dısney-dres.jpg" alt="Dısney Beyaz Elbise">
       <h3>Dısney Beyaz Elbise</h3>
-      <p>349.99 TL</p>
+      <p>449.99 TL</p>
       <button class="add-to-cart">Sepete Ekle</button>
       <button class="favorite-icon">♥</button>
     </div>
 
     <!-- Statik Ürün Kartı 2 -->
     <div class="product-card">
-      <img src="images/urunler/dress/denim-dress.jpg" alt="Denim Elbise">
+      <img src="images/urunler/dress/denim-dres.jpg" alt="Denim Elbise">
       <h3> Denim Elbise</h3>
-      <p>299.99 TL</p>
+      <p>569.99 TL</p>
       <button class="add-to-cart">Sepete Ekle</button>
       <button class="favorite-icon">♥</button>
     </div>
 
     <!-- Statik Ürün Kartı 3 -->
     <div class="product-card">
-      <img src="images/urunler/dress/baglama-beyaz-dress.jpg" alt="Bağlamalı Beyaz Elbise">
+      <img src="images/urunler/dress/baglama-beyaz-dres.jpg" alt="Bağlamalı Beyaz Elbise">
       <h3>Bağlamalı Beyaz Elbise</h3>
-      <p>379.99 TL</p>
+      <p>779.99 TL</p>
       <button class="add-to-cart">Sepete Ekle</button>
       <button class="favorite-icon">♥</button>
     </div>
 
     <!-- Statik Ürün Kartı 4 -->
     <div class="product-card">
-      <img src="#" alt="Elbise">
-      <h3>Elbise</h3>
-      <p>379.99 TL</p>
+      <img src="images/urunler/dress/dusuk-omuz-mavi-dres.jpg" alt="Düşük Omuz Mavi Elbise">
+      <h3>Düşük Omuz Mavi Elbise</h3>
+      <p>579.99 TL</p>
       <button class="add-to-cart">Sepete Ekle</button>
       <button class="favorite-icon">♥</button>
     </div>
 
     <!-- Statik Ürün Kartı 5 -->
     <div class="product-card">
-      <img src="#" alt="Elbise">
-      <h3>Elbise</h3>
-      <p>379.99 TL</p>
+      <img src="images/urunler/dress/madonna-yaka-mavi-dres.jpg" alt="Madonna Yaka Mavi Elbise">
+      <h3>Madonna Yaka Mavi Elbise</h3>
+      <p>679.99 TL</p>
       <button class="add-to-cart">Sepete Ekle</button>
       <button class="favorite-icon">♥</button>
     </div>
 
     <!-- Statik Ürün Kartı 6 -->
     <div class="product-card">
-      <img src="#" alt="Elbise">
-      <h3>Elbise</h3>
+      <img src="images/urunler/dress/kemerli-tensel-antrasit-dres.jpg" alt="Kemerli Antrasit Elbise">
+      <h3>Kemerli Antrasit Elbise</h3>
       <p>379.99 TL</p>
+      <button class="add-to-cart">Sepete Ekle</button>
+      <button class="favorite-icon">♥</button>
+    </div>
+
+     <!-- Statik Ürün Kartı 7 -->
+     <div class="product-card">
+      <img src="images/urunler/dress/kemerli-tensel-haki-dres.jpg" alt="Kemerli Haki Elbise">
+      <h3>Kemerli Haki Elbise</h3>
+      <p>379.99 TL</p>
+      <button class="add-to-cart">Sepete Ekle</button>
+      <button class="favorite-icon">♥</button>
+    </div>
+
+     <!-- Statik Ürün Kartı 8 -->
+     <div class="product-card">
+      <img src="images/urunler/dress/siyah-kaskorse-dres.jpg" alt="Siyah Kaşkorse Elbise">
+      <h3>Siyah Kaşkorse Elbise</h3>
+      <p>549.99 TL</p>
+      <button class="add-to-cart">Sepete Ekle</button>
+      <button class="favorite-icon">♥</button>
+    </div>
+
+     <!-- Statik Ürün Kartı 9 -->
+     <div class="product-card">
+      <img src="images/urunler/dress/straplez-kot-dres.jpg" alt="Straplez Denim Elbise">
+      <h3>Straplez Denim Elbise</h3>
+      <p>789.99 TL</p>
+      <button class="add-to-cart">Sepete Ekle</button>
+      <button class="favorite-icon">♥</button>
+    </div>
+
+     <!-- Statik Ürün Kartı 10 -->
+     <div class="product-card">
+      <img src="images/urunler/dress/uzunkollu-dantel-beyaz-dres.jpg" alt="Uzun Kollu Dantel Beyaz Elbise">
+      <h3>Uzun kollu Dantel Beyaz Elbise</h3>
+      <p>599.99 TL</p>
       <button class="add-to-cart">Sepete Ekle</button>
       <button class="favorite-icon">♥</button>
     </div>
@@ -134,52 +185,57 @@
 
   </section>
 
-  <!-- FOOTER BAŞLANGICI -->
-  <footer class="wd-footer footer-container color-scheme-light">
+   <!-- FOOTER BAŞLANGICI -->
+   <footer class="wd-footer footer-container color-scheme-light">
     <div class="container main-footer">
-      <!-- Footer içeriği için grid yapı -->
-      <aside class="footer-sidebar widget-area wd-grid-g" style="--wd-col-lg:12;--wd-gap-lg:30px;--wd-gap-sm:20px;">
+        <!-- Footer içeriği için grid yapı -->
+        <aside class="footer-sidebar widget-area wd-grid-g"
+            style="--wd-col-lg:12;--wd-gap-lg:30px;--wd-gap-sm:20px;">
 
-        <!-- 1. Sütun: İletişim Bilgileri -->
-        <div class="footer-column wd-grid-col" style="--wd-col-xs:12;--wd-col-md:6;--wd-col-lg:3;">
-          <div class="wpb-content-wrapper">
-            <p>Bizlere aşağıdaki iletişim bilgilerinden ulaşabilirsiniz. En kısa sürede geri dönüş sağlayacağız.</p>
-            <ul class="wd-list">
-              <li><img src="images/navigation.png" width="14"> <span>Ataşehir/İSTANBUL</span></li>
-              <li><img src="images/smartphone.png" width="14"> <a href="tel:+08503083706">0 (850) 308 37 06</a></li>
-              <li><img src="images/mail.png" width="14"> <a href="mailto:info@fashionshop.com">info@fashionshop.com</a>
-              </li>
-            </ul>
-          </div>
-        </div>
+            <!-- 1. Sütun: İletişim Bilgileri -->
+            <div class="footer-column wd-grid-col" style="--wd-col-xs:12;--wd-col-md:6;--wd-col-lg:3;">
+                <div class="wpb-content-wrapper">
+                    <p>Bizlere aşağıdaki iletişim bilgilerinden ulaşabilirsiniz. En kısa sürede geri dönüş
+                        sağlayacağız.</p>
+                    <ul class="wd-list">
+                        <li><img src="images/navigation.png" width="14"> <span>Ataşehir/İSTANBUL</span></li>
+                        <li><img src="images/smartphone.png" width="14"> <a href="tel:+08503083706">0 (850) 308 37
+                                06</a></li>
+                        <li><img src="images/mail.png" width="14"> <a
+                                href="mailto:info@fashionshop.com">info@fashionshop.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
 
-        <!-- 2. Sütun: Önemli Bilgiler -->
-        <div class="footer-column wd-grid-col" style="--wd-col-xs:12;--wd-col-md:6;--wd-col-lg:3;">
-          <h5>Önemli Bilgiler</h5>
-          <ul>
-            
-            <li><a href="#">Ödeme ve Teslimat</a></li>
-            <li><a href="#">Çerez Politikamız</a></li>
-            <li><a href="#">Mesafeli Satış Sözleşmesi</a></li>
-            <li><a href="#">İptal ve İade Koşulları</a></li>
-            <li><a href="#">Gizlilik ve Güvenlik</a></li>
-            <li><a href="#">Sıkça Sorulan Sorular</a></li>
-            <li><a href="#">Hakkımızda</a></li>
-            <li><a href="#">İletişim</a></li>
-          </ul>
-        </div>
-      </aside>
+            <!-- 2. Sütun: Önemli Bilgiler -->
+            <div class="footer-column wd-grid-col" style="--wd-col-xs:12;--wd-col-md:6;--wd-col-lg:3;">
+                <h5>Önemli Bilgiler</h5>
+                <ul>
+                    
+                    <li><a href="Pd.html">Ödeme ve Teslimat</a></li>
+                    <li><a href="Cookies.html">Çerez Politikamız</a></li>
+                    <li><a href="DSA.html">Mesafeli Satış Sözleşmesi</a></li>
+                    <li><a href="cancellation.html">İptal ve İade Koşulları</a></li>
+                    <li><a href="Psp.html">Gizlilik ve Güvenlik</a></li>
+                    <li><a href="question.html">Sıkça Sorulan Sorular</a></li>
+                    <li><a href="about.html">Hakkımızda</a></li>
+                </ul>
+            </div>
+        </aside>
     </div>
 
     <!-- Telif Hakkı Bölümü -->
     <div class="copyrights">
-      <small>© 2025 - FashionShop | Media Agency: <a href="https://kaiajans.com/"><strong>KAEM
-            Ajans</strong></a></small>
+        <small>© 2025 - FashionShop | Media Agency: <a href="https://kaiajans.com/"><strong>KAEM
+                    Ajans</strong></a></small>
     </div>
-  </footer>
-  <!-- FOOTER BİTİŞ -->
+</footer>
+<!-- FOOTER BİTİŞ -->
 
+  <!--Script-->
   <script src="js/header.js"></script>
+  <script src="js/user.js"></script>
   <script src="js/shirts.js"></script>
 
 </body>
