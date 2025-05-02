@@ -2,13 +2,13 @@
 
 /* Genel link stilleri (tüm sayfada geçerli) */
 a {
-  color: #e67e22;
+  color: #AF8D5F;
   text-decoration: none;
   transition: color 0.2s ease;
 }
 
 a:hover {
-  color: #ca6f1e;
+  color: #AF8D5F;
   text-decoration: underline;
 }
 
