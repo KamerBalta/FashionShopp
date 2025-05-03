@@ -24,6 +24,8 @@
         visibility: visible;
         opacity: 1;
         pointer-events: auto;
+    max-width: 1440px;
+
     }
 .close-btn {
     position: absolute;
@@ -54,4 +56,99 @@
     cursor: pointer;
 }
 
+/* ARAMA */
+.search-overlay {
+    background-color: #f5f5f5; /* header ile aynı renk */
+    color: black;
+    border-bottom: 1px solid #ddd;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 10px; /* header ile aynı */
+    display: none;
+    z-index: 10000;
+  }
+  
+  .search-container {
+    max-width: 1440px; /* .container ile aynı */
+    margin: 0 auto;
+    padding: 0 10px;
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  
+  .search-container input {
+    width: 100%;
+    flex: 1;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    outline: none;
+  }
+  
+  .search-container button {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    font-size: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: black;
+    font-size: 24px;
+  }
+  /* Arama sonuçları alanı */
+.search-results {
+    max-width: 1440px;
+    margin: 20px auto;
+    padding: 0 10px 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 20px;
+  }
+  
+  /* Ürün kartı */
+  .product-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    text-align: center;
+    transition: transform 0.2s ease;
+    cursor: pointer;
+  }
+  
+  .product-card:hover {
+    transform: translateY(-4px);
+  }
+  
+  /* Ürün resmi */
+  .product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+  
+  /* Ürün adı */
+  .product-card h3 {
+    font-size: 14px;
+    margin: 10px 0 5px;
+    color: #222;
+  }
+  
+  /* Fiyat */
+  .product-card p {
+    font-weight: bold;
+    color: #444;
+    margin: 0;
+    font-size: 14px;
+  }
+  
 

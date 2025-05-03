@@ -35,3 +35,16 @@ document.getElementById('loginForm').addEventListener('submit', async function (
         alert('Bir hata oluştu. Lütfen tekrar deneyin.');
     }
 });
+
+
+/* SEARCH */
+document.querySelector('[alt="Arama"]').addEventListener("click", function (e) {
+    e.preventDefault();
+    document.getElementById("searchOverlay").style.display = "block";
+    document.getElementById("searchInput").focus();
+  });
+  
+  document.getElementById("closeSearch").addEventListener("click", function () {
+    document.getElementById("searchOverlay").style.display = "none";
+  });
+  

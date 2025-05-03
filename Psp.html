@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>GİZLİLİK VE GÜVENLİK POLİTİKASI-Fashionshop</title>
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-
+    <link rel="icon" href="images/favicon.png" type="image/png">
 
     <!-- Stil dosyası -->
     <link rel="stylesheet" href="css/header.css" />
     <link rel="stylesheet" href="css/footer.css" />
     <link rel="stylesheet" href="css/mainDsa.css">
+    <link rel="stylesheet" href="css/user.css">
 
 </head>
 
@@ -56,25 +56,39 @@
                             <li class="dropdown">
                                 <a href="#">DIŞ GİYİM</a>
                                 <ul class="submenu">
-                                    <li><a href="/ceket">Ceket</a></li>
-                                    <li><a href="/Mont-kaban">Mont & Kaban</a></li>
-                                    <li><a href="/trençkot">Trençkot</a></li>
+                                    <li><a href="jackets.html">Ceket</a></li>
+                                    <li><a href="coats.html">Mont & Kaban</a></li>
+                                    <li><a href="trenchcoats.html">Trençkot</a></li>
                                 </ul>
                             </li>
                         </ul>
                     </nav>
 
                     <!-- SAĞ: HESAP MENÜ -->
-                    <div class="hesap-menu">
-                        <a href="/hesabim"><img src="images/user.png" alt="Hesap" /></a>
-                        <a href="/arama"><img src="images/wishlist.png" alt="Arama" /></a>
-                        <a href="/favorilerim"><img src="images/search.png" alt="Favoriler" /></a>
-                        <a href="/sepetim"><img src="images/market.png" alt="Sepet" /></a>
-                    </div>
+                  <div class="hesap-menu">
+                    <a href="#" id="openLogin"><img src="images/user.png" alt="Hesap" /></a>
+                    <a href="#"><img src="images/wishlist.png" alt="Arama" /></a>
+                    <a href="#"><img src="images/search.png" alt="Favoriler" /></a>
+                    <a href="#"><img src="images/market.png" alt="Sepet" /></a>
+                </div>
 
                 </div>
             </div>
         </div>
+        <!------------ Giriş paneli (sidebar) --------------------->
+<div id="loginSidebar" class="sidebar">
+    <button id="closeLogin" class="close-btn">×</button>
+    <form id="loginForm">
+        <h2>Giriş Yap</h2>
+        <label for="email">E-posta:</label>
+        <input type="email" id="email" name="email" required>
+  
+        <label for="password">Şifre:</label>
+        <input type="password" id="password" name="password" required>
+  
+        <button type="submit">Giriş</button>
+    </form>
+  </div>
     </header>
     <!-- HEADER BİTİŞ -->
 
@@ -209,6 +223,7 @@
 
     <!-- Script: Menü aç/kapat -->
     <script src="js/header.js"></script>
+    <script src="js/user.js"></script>
 
 </body>
 

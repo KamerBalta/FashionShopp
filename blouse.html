@@ -5,15 +5,11 @@
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kadın Gömlek Modelleri-FashionShop</title>
-  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-
+  <title>Kadın Bluz&Body Modelleri-FashionShop</title>
   <link rel="stylesheet" href="css/header.css">
   <link rel="stylesheet" href="css/footer.css">
   <link rel="stylesheet" href="css/products.css">
-  <link rel="stylesheet" href="css/user.css">
  
-
 
 </head>
 
@@ -21,80 +17,90 @@
 
   <!-- HEADER BAŞLANGIÇ -->
   <header class="main-header">
-      <div class="main-header">
-          <div class="container">
-              <div class="header-flex">
+    <div class="main-header">
+        <div class="container">
+            <div class="header-flex">
 
-                  <!-- Menü Toggle Butonu (Mobil için) -->
-                  <button class="menu-toggle" aria-label="Menüyü Aç/Kapat">&#9776;</button>
+                <!-- Menü Toggle Butonu (Mobil için) -->
+                <button class="menu-toggle" aria-label="Menüyü Aç/Kapat">&#9776;</button>
 
+                <!-- SOL: LOGO -->
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/logo.png" alt="FashionShop Logo" />
+                    </a>
+                </div>
 
-          <!-- SOL: LOGO -->
-          <div class="logo">
-            <a href="index.html">
-              <img src="images/logo.png" alt="FashionShop Logo" />
-            </a>
-          </div>
+                <!-- ORTA: MENÜ -->
+                <nav class="main-nav" aria-label="Ana Menü">
+                    <ul class="menu">
+                        <li class="dropdown">
+                            <a href="#">ÜST GİYİM</a>
+                            <ul class="submenu">
+                                <li><a href="blouse.html">Bluz & Body</a></li>
+                                <li><a href="dress.html">Elbise</a></li>
+                                <li><a href="shirts.html">Gömlek</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#">ALT GİYİM</a>
+                            <ul class="submenu">
+                                <li><a href="pants.html">Pantolon</a></li>
+                                <li><a href="skirt.html">Etek</a></li>
+                                <li><a href="shorts.html">Şort</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#">DIŞ GİYİM</a>
+                            <ul class="submenu">
+                                <li><a href="jackets.html">Ceket</a></li>
+                                <li><a href="coats.html">Mont & Kaban</a></li>
+                                <li><a href="trenchcoats.html">Trençkot</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
 
+                <!-- SAĞ: HESAP MENÜ -->
+                <div class="hesap-menu">
+                    <a href="#" id="searchIcon"><img src="images/search.png" alt="Arama" /></a>
+                    <a href="#" id="openLogin"><img src="images/user.png" alt="Hesap" /></a>
+                    <a href="#"><img src="images/wishlist.png" alt="Favoriler" /></a>
+                    <a href="#"><img src="images/market.png" alt="Sepet" /></a>
+                </div>
 
-
-          <!-- ORTA: MENÜ -->
-          <nav class="main-nav" aria-label="Ana Menü">
-            <ul class="menu">
-              <li class="dropdown">
-                <a href="#">ÜST GİYİM</a>
-                <ul class="submenu">
-                  <li><a href="blouse.html">Bluz & Body</a></li>
-                  <li><a href="dress.html">Elbise</a></li>
-                  <li><a href="shirts.html">Gömlek</a></li>
-                </ul>
-              </li>
-              <li class="dropdown">
-                <a href="#">ALT GİYİM</a>
-                <ul class="submenu">
-                  <li><a href="pants.html">Pantolon</a></li>
-                  <li><a href="skirt.html">Etek</a></li>
-                  <li><a href="shorts.html">Şort</a></li>
-                </ul>
-              </li>
-              <li class="dropdown">
-                <a href="#">DIŞ GİYİM</a>
-                <ul class="submenu">
-                  <li><a href="/ceket">Ceket</a></li>
-                  <li><a href="/Mont-kaban">Mont & Kaban</a></li>
-                  <li><a href="/trençkot">Trençkot</a></li>
-                </ul>
-              </li>
-            </ul>
-          </nav>
-
-                  <!-- SAĞ: HESAP MENÜ -->
-                  <div class="hesap-menu">
-                      <a href="#" id="openLogin"><img src="images/user.png" alt="Hesap" /></a>
-                      <a href="#"><img src="images/wishlist.png" alt="Arama" /></a>
-                      <a href="#"><img src="images/search.png" alt="Favoriler" /></a>
-                      <a href="#"><img src="images/market.png" alt="Sepet" /></a>
-                  </div>
-
-              </div>
-          </div>
-      </div>
+            </div>
+        </div>
+    </div>
 <!------------ Giriş paneli (sidebar) --------------------->
 <div id="loginSidebar" class="sidebar">
-  <button id="closeLogin" class="close-btn">×</button>
-  <form id="loginForm">
-      <h2>Giriş Yap</h2>
-      <label for="email">E-posta:</label>
-      <input type="email" id="email" name="email" required>
+<button id="closeLogin" class="close-btn">×</button>
+<form id="loginForm">
+    <h2>Giriş Yap</h2>
+    <label for="email">E-posta:</label>
+    <input type="email" id="email" name="email" required>
 
-      <label for="password">Şifre:</label>
-      <input type="password" id="password" name="password" required>
+    <label for="password">Şifre:</label>
+    <input type="password" id="password" name="password" required>
 
-      <button type="submit">Giriş</button>
-  </form>
+    <button type="submit">Giriş</button>
+</form>
 </div>
-  </header>
-  <!-- HEADER BİTİŞ -->
+
+<!-- Arama Kutusu Overlay -->
+<!-- Arama Kutusu Overlay -->
+<div class="search-overlay" id="searchOverlay">
+<div class="search-container">
+  <input type="text" placeholder="Ürün, kategori ara..." id="searchInput" />
+  <button id="closeSearch" aria-label="Kapat">×</button>
+</div>
+<div id="searchResults" class="search-results"></div> <!-- BURAYA EKLENDİ -->
+</div>
+
+
+
+</header>
+<!-- HEADER BİTİŞ -->
 
   <!-- ANA İÇERİK: Bluz Ürünleri -->
   <section class="product-list">
@@ -170,24 +176,6 @@
       <button class="add-to-cart">Sepete Ekle</button>
       <button class="favorite-icon">♥</button>
     </div>
-    
-    <!-- Statik Ürün Kartı 9 -->
-    <div class="product-card">
-      <img src="images/urunler/blouse/kayıkyaka-beyaz-blouse.jpg" alt="Kayık Yaka Beyaz Bluz">
-      <h3>Kayık Yaka Beyaz Bluz</h3>
-      <p>409.99 TL</p>
-      <button class="add-to-cart">Sepete Ekle</button>
-      <button class="favorite-icon">♥</button>
-    </div>
-
-    <!-- Statik Ürün Kartı 10 -->
-    <div class="product-card">
-      <img src="images/urunler/blouse/straplez-siyah-blouse.jpg" alt="Straplez Siyah Bluz">
-      <h3>Straplez Siyah Bluz</h3>
-      <p>519.99 TL</p>
-      <button class="add-to-cart">Sepete Ekle</button>
-      <button class="favorite-icon">♥</button>
-    </div>
 
 
   </section>
@@ -240,8 +228,8 @@
 </footer>
 <!-- FOOTER BİTİŞ -->
 
-  <script src="js/header.js"></script>
-  <script src="js/user.js"></script>
+<script src="js/header.js"></script>
+<script src="js/user.js"></script>
   <script src="js/shirts.js"></script>
 
 </body>
