@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kadın Mont&Kaban Modelleri-FashionShop</title>
-  <link rel="icon" href="images/favicon.png" type="image/png">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="css/header.css">
   <link rel="stylesheet" href="css/products.css">
   <link rel="stylesheet" href="css/footer.css">
@@ -17,61 +17,60 @@
   <!-- HEADER BAŞLANGIÇ -->
   <header class="main-header">
     <div class="main-header">
-      <div class="container">
-        <div class="header-flex">
+        <div class="container">
+            <div class="header-flex">
 
-          <!-- Menü Toggle Butonu (Mobil için) -->
-          <button class="menu-toggle" aria-label="Menüyü Aç/Kapat">&#9776;</button>
+                <!-- Menü Toggle Butonu (Mobil için) -->
+                <button class="menu-toggle" aria-label="Menüyü Aç/Kapat">&#9776;</button>
 
-          <!-- SOL: LOGO -->
-          <div class="logo">
-            <a href="index.html">
-              <img src="images/logo.jpeg" alt="FashionShop Logo" />
-            </a>
+                <!-- SOL: LOGO -->
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/logo.png" alt="FashionShop Logo" />
+                    </a>
+                </div>
+
+                <!-- ORTA: MENÜ -->
+                <nav class="main-nav" aria-label="Ana Menü">
+                    <ul class="menu">
+                        <li class="dropdown">
+                            <a href="#">ÜST GİYİM</a>
+                            <ul class="submenu">
+                                <li><a href="blouse.html">Bluz & Body</a></li>
+                                <li><a href="dress.html">Elbise</a></li>
+                                <li><a href="shirts.html">Gömlek</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                          <a href="#">ALT GİYİM</a>
+                          <ul class="submenu">
+                              <li><a href="pants.html">Pantolon</a></li>
+                              <li><a href="skirt.html">Etek</a></li>
+                              <li><a href="shorts.html">Şort</a></li>
+                          </ul>
+                      </li>
+                      <li class="dropdown">
+                          <a href="#">DIŞ GİYİM</a>
+                          <ul class="submenu">
+                              <li><a href="jackets.html">Ceket</a></li>
+                              <li><a href="coats.html">Mont & Kaban</a></li>
+                              <li><a href="trenchcoats.html">Trençkot</a></li>
+                          </ul>
+                      </li>
+                  </ul>
+              </nav>
+
+              <!-- SAĞ: HESAP MENÜ -->
+              <div class="hesap-menu">
+                  <a href="#" id="searchIcon"><img src="images/search.png" alt="Arama" /></a>
+                  <a href="#" id="openLogin"><img src="images/user.png" alt="Hesap" /></a>
+                  <a href="#"><img src="images/wishlist.png" alt="Favoriler" /></a>
+                  <a href="#"><img src="images/market.png" alt="Sepet" /></a>
+              </div>
+            </div>
           </div>
-
-          <!-- ORTA: MENÜ -->
-          <nav class="main-nav" aria-label="Ana Menü">
-            <ul class="menu">
-              <li class="dropdown">
-                <a href="#">ÜST GİYİM</a>
-                <ul class="submenu">
-                  <li><a href="blouse.html">Bluz & Body</a></li>
-                  <li><a href="dress.html">Elbise</a></li>
-                  <li><a href="shirts.html">Gömlek</a></li>
-                </ul>
-              </li>
-              <li class="dropdown">
-                <a href="#">ALT GİYİM</a>
-                <ul class="submenu">
-                  <li><a href="pants.html">Pantolon</a></li>
-                  <li><a href="skirt.html">Etek</a></li>
-                  <li><a href="shorts.html">Şort</a></li>
-                </ul>
-              </li>
-              <li class="dropdown">
-                <a href="#">DIŞ GİYİM</a>
-                <ul class="submenu">
-                  <li><a href="jackets.html">Ceket</a></li>
-                  <li><a href="coats.html">Mont & Kaban</a></li>
-                  <li><a href="trenchcoats.html">Trençkot</a></li>
-                </ul>
-              </li>
-            </ul>
-          </nav>
-
-          <!-- SAĞ: HESAP MENÜ -->
-          <div class="hesap-menu">
-            <a href="#" id="openLogin"><img src="images/user.png" alt="Hesap" /></a>
-            <a href="#"><img src="images/wishlist.png" alt="Arama" /></a>
-            <a href="#"><img src="images/search.png" alt="Favoriler" /></a>
-            <a href="#"><img src="images/market.png" alt="Sepet" /></a>
-        </div>
-
-        </div>
       </div>
-    </div>
-    <!------------ Giriş paneli (sidebar) --------------------->
+<!------------ Giriş paneli (sidebar) --------------------->
 <div id="loginSidebar" class="sidebar">
   <button id="closeLogin" class="close-btn">×</button>
   <form id="loginForm">
@@ -85,7 +84,17 @@
       <button type="submit">Giriş</button>
   </form>
 </div>
-  </header>
+
+<!-- Arama Kutusu Overlay -->
+<!-- Arama Kutusu Overlay -->
+<div class="search-overlay" id="searchOverlay">
+  <div class="search-container">
+    <input type="text" placeholder="Ürün, kategori ara..." id="searchInput" />
+    <button id="closeSearch" aria-label="Kapat">×</button>
+  </div>
+  <div id="searchResults" class="search-results"></div> <!-- BURAYA EKLENDİ -->
+</div>
+</header>
   <!-- HEADER BİTİŞ -->
 
   <!-- ANA İÇERİK: Mont&Kaban Ürünleri -->
@@ -187,45 +196,48 @@
   <!-- FOOTER BAŞLANGICI -->
   <footer class="wd-footer footer-container color-scheme-light">
     <div class="container main-footer">
-      <!-- Footer içeriği için grid yapı -->
-      <aside class="footer-sidebar widget-area wd-grid-g" style="--wd-col-lg:12;--wd-gap-lg:30px;--wd-gap-sm:20px;">
+        <!-- Footer içeriği için grid yapı -->
+        <aside class="footer-sidebar widget-area wd-grid-g"
+            style="--wd-col-lg:12;--wd-gap-lg:30px;--wd-gap-sm:20px;">
 
-        <!-- 1. Sütun: İletişim Bilgileri -->
-        <div class="footer-column wd-grid-col" style="--wd-col-xs:12;--wd-col-md:6;--wd-col-lg:3;">
-          <div class="wpb-content-wrapper">
-            <p>Bizlere aşağıdaki iletişim bilgilerinden ulaşabilirsiniz. En kısa sürede geri dönüş sağlayacağız.</p>
-            <ul class="wd-list">
-              <li><img src="images/navigation.png" width="14"> <span>Ataşehir/İSTANBUL</span></li>
-              <li><img src="images/smartphone.png" width="14"> <a href="tel:+08503083706">0 (850) 308 37 06</a></li>
-              <li><img src="images/mail.png" width="14"> <a href="mailto:info@fashionshop.com">info@fashionshop.com</a>
-              </li>
-            </ul>
+            <!-- 1. Sütun: İletişim Bilgileri -->
+            <div class="footer-column wd-grid-col" style="--wd-col-xs:12;--wd-col-md:6;--wd-col-lg:3;">
+                <div class="wpb-content-wrapper">
+                    <p>Bizlere aşağıdaki iletişim bilgilerinden ulaşabilirsiniz. En kısa sürede geri dönüş
+                        sağlayacağız.</p>
+                    <ul class="wd-list">
+                        <li><img src="images/navigation.png" width="14"> <span>Ataşehir/İSTANBUL</span></li>
+                        <li><img src="images/smartphone.png" width="14"> <a href="tel:+08503083706">0 (850) 308 37
+                                06</a></li>
+                        <li><img src="images/mail.png" width="14"> <a
+                                href="mailto:info@fashionshop.com">info@fashionshop.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 2. Sütun: Önemli Bilgiler -->
+            <div class="footer-column wd-grid-col" style="--wd-col-xs:12;--wd-col-md:6;--wd-col-lg:3;">
+              <h5>Önemli Bilgiler</h5>
+              <ul>
+                  
+                  <li><a href="Pd.html">Ödeme ve Teslimat</a></li>
+                  <li><a href="Cookies.html">Çerez Politikamız</a></li>
+                  <li><a href="DSA.html">Mesafeli Satış Sözleşmesi</a></li>
+                  <li><a href="cancellation.html">İptal ve İade Koşulları</a></li>
+                  <li><a href="Psp.html">Gizlilik ve Güvenlik</a></li>
+                  <li><a href="question.html">Sıkça Sorulan Sorular</a></li>
+                  <li><a href="about.html">Hakkımızda</a></li>
+              </ul>
           </div>
-        </div>
+      </aside>
+  </div>
 
-        <!-- 2. Sütun: Önemli Bilgiler -->
-        <div class="footer-column wd-grid-col" style="--wd-col-xs:12;--wd-col-md:6;--wd-col-lg:3;">
-          <h5>Önemli Bilgiler</h5>
-          <ul>
-              
-              <li><a href="Pd.html">Ödeme ve Teslimat</a></li>
-              <li><a href="Cookies.html">Çerez Politikamız</a></li>
-              <li><a href="DSA.html">Mesafeli Satış Sözleşmesi</a></li>
-              <li><a href="cancellation.html">İptal ve İade Koşulları</a></li>
-              <li><a href="Psp.html">Gizlilik ve Güvenlik</a></li>
-              <li><a href="question.html">Sıkça Sorulan Sorular</a></li>
-              <li><a href="about.html">Hakkımızda</a></li>
-          </ul>
-      </div>
-  </aside>
-</div>
-
-    <!-- Telif Hakkı Bölümü -->
-    <div class="copyrights">
+  <!-- Telif Hakkı Bölümü -->
+  <div class="copyrights">
       <small>© 2025 - FashionShop | Media Agency: <a href="https://kaiajans.com/"><strong>KAEM
-            Ajans</strong></a></small>
-    </div>
-  </footer>
+                  Ajans</strong></a></small>
+  </div>
+</footer>
   <!-- FOOTER BİTİŞ -->
 
   <script src="js/header.js"></script>
