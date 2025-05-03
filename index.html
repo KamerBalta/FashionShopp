@@ -9,6 +9,7 @@
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 
 
+
     <!-- Stil dosyası -->
     <link rel="stylesheet" href="css/header.css" />
     <link rel="stylesheet" href="css/footer.css" />
@@ -69,8 +70,8 @@
 
                     <!-- SAĞ: HESAP MENÜ -->
                     <div class="hesap-menu">
+                        <a href="#" id="searchIcon"><img src="images/search.png" alt="Arama" /></a>
                         <a href="#" id="openLogin"><img src="images/user.png" alt="Hesap" /></a>
-                        <a href="#"><img src="images/search.png" alt="Arama" /></a>
                         <a href="#"><img src="images/wishlist.png" alt="Favoriler" /></a>
                         <a href="#"><img src="images/market.png" alt="Sepet" /></a>
                     </div>
@@ -92,6 +93,19 @@
         <button type="submit">Giriş</button>
     </form>
 </div>
+
+<!-- Arama Kutusu Overlay -->
+<!-- Arama Kutusu Overlay -->
+<div class="search-overlay" id="searchOverlay">
+    <div class="search-container">
+      <input type="text" placeholder="Ürün, kategori ara..." id="searchInput" />
+      <button id="closeSearch" aria-label="Kapat">×</button>
+    </div>
+    <div id="searchResults" class="search-results"></div> <!-- BURAYA EKLENDİ -->
+  </div>
+  
+  
+  
     </header>
     <!-- HEADER BİTİŞ -->
 
