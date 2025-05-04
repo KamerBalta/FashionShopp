@@ -31,70 +31,21 @@ document.getElementById('loginForm').addEventListener('submit', async function (
     }
 });
 
-// Sayfa yüklendiğinde oturum kontrolü
+// Sayfa yüklendiğinde oturum kontrolü ve otomatik çıkış
 window.addEventListener('load', () => {
-    const user = localStorage.getItem('loggedInUser');
-    if (user) {
-        alert(`${user} olarak zaten giriş yapılmış.`);
-        // İstersen burada sayfada kullanıcı adını da gösterebilirsin
-    }
-});
-
-
-
-/* SEARCH */
-
-// Arama açma
-document.querySelector('[alt="Arama"]').addEventListener("click", function (e) {
-  e.preventDefault();
-  document.getElementById("searchOverlay").style.display = "block";
-  document.getElementById("searchInput").focus();
-});
-
-// Arama kapama
-document.getElementById("closeSearch").addEventListener("click", function () {
-  document.getElementById("searchOverlay").style.display = "none";
-  document.getElementById("searchInput").value = "";
-  document.getElementById("searchResults").innerHTML = "";
-});
-
-// Arama alanları
-const searchInput = document.getElementById("searchInput");
-const searchResults = document.getElementById("searchResults");
-
-// Gerçek ürünleri products.js dosyasından alıyoruz (önceden tanımlı olmalı)
-searchInput.addEventListener("input", function () {
-  const query = this.value.toLowerCase();
-  searchResults.innerHTML = "";
-
-  if (query.length > 1) {
-    const filtered = products.filter(p =>
-      p.name.toLowerCase().includes(query)
-    );
-
-    if (filtered.length === 0) {
-      searchResults.innerHTML = "<p style='padding:10px;'>Sonuç bulunamadı</p>";
-    } else {
-      filtered.forEach(p => {
-        const a = document.createElement("a");
-        a.href = p.link;
-        a.className = "product-card";
-
-        // Fiyatı 'xxx.xx TL' formatına çevir
-        const formattedPrice = p.price.toFixed(2) + " TL";
-
-        a.innerHTML = `
-          <img src="${p.image}" alt="${p.name}">
-          <div>
-            <h4>${p.name}</h4>
-            <p>${formattedPrice}</p>
-          </div>
-        `;
-        searchResults.appendChild(a);
-      });
-    }
+  const user = localStorage.getItem('loggedInUser');
+  if (user) {
+      alert(`${user} olarak giriş yapılmıştı, şimdi otomatik çıkış yapılıyor.`);
+      localStorage.removeItem('loggedInUser'); // Otomatik çıkış
+      // İstersen burada sayfayı yenileyebilirsin veya başka bir şey gösterebilirsin
+      // location.reload();
   }
 });
+
+
+
+
+
 
   
   
