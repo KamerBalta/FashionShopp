@@ -1,16 +1,18 @@
 // Tüm kalp ikonlarını seç
 document.querySelectorAll('.favorite-icon').forEach(icon => {
-    icon.addEventListener('click', () => {
-      // Kalbin favoride olup olmadığını kontrol et
-      const isFavorited = icon.classList.toggle('favorited');
-  
-      // Rengi değiştir (favorited class'ına göre)
-      icon.style.color = isFavorited ? '#e74c3c' : '#ccc';
-  
-      // Mesaj göster
-      showMessage(isFavorited ? 'Favorilere eklendi' : 'Favorilerden çıkarıldı');
-    });
+  icon.addEventListener('click', () => {
+    // Kalbin favoride olup olmadığını kontrol et
+    const isFavorited = icon.classList.toggle('favorited');
+
+    // Rengi değiştir (favorited class'ına göre)
+    icon.style.color = isFavorited ? '#e74c3c' : '#ccc';
+
+    // Mesaj göster
+    showMessage(isFavorited ? 'Favorilere eklendi' : 'Favorilerden çıkarıldı');
   });
+});
+
+//sepete ekle kısmı
   document.querySelectorAll('.add-to-cart').forEach(icon => {
     icon.addEventListener('click', () => {
         //buraya veritabanına ürün ekleme/ çıkarma fetch isteği eklenecek

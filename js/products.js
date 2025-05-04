@@ -5,6 +5,7 @@ const products = [
       name: "Beyaz Düşük Omuz Bluz",
       price: 349.99,
       image: "images/urunler/blouse/dusuk-omuz-blouse.jpg",
+      size: ["S","M","L"],
       category: "blouse"
     },
     {
@@ -13,6 +14,7 @@ const products = [
       name: "Siyah Madonna Yaka Bluz",
       price: 299.99,
       image: "images/urunler/blouse/madonna-yaka-blouse.jpg",
+      size: ["S","M","L"],
       category: "blouse"
     },
     {
@@ -21,6 +23,7 @@ const products = [
       name: "Antrasit Madonna Yaka Düğmeli Bluz",
       price: 349.99,
       image: "images/urunler/blouse/antrasit-madonna-blouse.jpg",
+      size: ["S","M","L"],
       category: "blouse"
     },
     {
@@ -29,6 +32,7 @@ const products = [
       name: "Beyaz Bodysuit",
       price: 379.99,
       image: "images/urunler/blouse/beyaz-body-blouse.jpg",
+      size: ["S","M","L"],
       category: "blouse"
     },
     {
@@ -37,6 +41,7 @@ const products = [
       name: "Yağ Yeşili Bodysuit",
       price: 379.99,
       image: "images/urunler/blouse/yagyesil-body-blouse.jpg",
+      size: ["S","M","L"],
       category: "blouse"
     },
     {
@@ -45,6 +50,7 @@ const products = [
       name: "Siyah Body",
       price: 279.99,
       image: "images/urunler/blouse/siyah-body-blouse.jpg",
+      size: ["S","M","L"],
       category: "blouse"
     },
     {
@@ -53,6 +59,7 @@ const products = [
       name: "Haki Soft Touch Bluz",
       price: 379.99,
       image: "images/urunler/blouse/haki-softtouch-blouse.jpg",
+      size: ["S","M","L"],
       category: "blouse"
     },
     {
@@ -61,6 +68,7 @@ const products = [
       name: "Kahve Soft Touch Bluz",
       price: 379.99,
       image: "images/urunler/blouse/kahve-softtouch-blouse.jpg",
+      size: ["S","M","L"],
       category: "blouse"
     },
     {
@@ -69,6 +77,7 @@ const products = [
         name: "Acı Kahve Kısa Kürk",
         price: 1299.99,
         image: "images/urunler/coats/AcıKahveKısaKurk.jpg",
+        size: ["S","M","L"],
         category: "coats"
       },
       {
@@ -77,6 +86,7 @@ const products = [
         name: "Antrasit Maxi Kaşe Kaban",
         price: 1299.99,
         image: "images/urunler/coats/AntrasitKaseKaban.jpg",
+        size: ["S","M","L"],
         category: "coats"
       },
       {
@@ -85,6 +95,7 @@ const products = [
         name: "Bej Maxi Kaşe Kaban",
         price: 1299.99,
         image: "images/urunler/coats/BejKaseKaban.jpg",
+        size: ["S","M","L"],
         category: "coats"
       },
       {
@@ -93,6 +104,7 @@ const products = [
         name: "Çizgili Kısa Kaban",
         price: 1199.99,
         image: "images/urunler/coats/CizgiliKısaKaban.jpg",
+        size: ["S","M","L"],
         category: "coats"
       },
       {
@@ -101,6 +113,7 @@ const products = [
         name: "Kahve Denim Detaylı Mont",
         price: 999.99,
         image: "images/urunler/coats/KahveDenimMont.jpg",
+        size: ["S","M","L"],
         category: "coats"
       },
       {
@@ -109,6 +122,7 @@ const products = [
         name: "Kahve Maxi Kaşe Kaban",
         price: 1299.99,
         image: "images/urunler/coats/KahveKaseKaban.jpg",
+        size: ["S","M","L"],
         category: "coats"
       },
       {
@@ -117,6 +131,7 @@ const products = [
         name: "Kürklü Siyah Kaşe Kaban",
         price: 1499.99,
         image: "images/urunler/coats/KurkluSiyahKaseKaban.jpg",
+        size: ["S","M","L"],
         category: "coats"
       },
       {
@@ -125,6 +140,7 @@ const products = [
         name: "Siyah Maxi Kaşe Kaban",
         price: 1299.99,
         image: "images/urunler/coats/SiyahKaseKaban.jpg",
+        size: ["S","M","L"],
         category: "coats"
       },
       {
@@ -133,6 +149,7 @@ const products = [
         name: "Taş Renk Bağlamalı Mont",
         price: 999.99,
         image: "images/urunler/coats/TasBaglamalıMont.jpg",
+        size: ["S","M","L"],
         category: "coats"
       },
       {
@@ -141,6 +158,7 @@ const products = [
         name: "Taş Renk Orta Boy Kürk",
         price: 1499.99,
         image: "images/urunler/coats/TasOrtaKürk.jpg",
+        size: ["S","M","L"],
         category: "coats"
       },
       {
@@ -149,6 +167,7 @@ const products = [
         name: "Dısney Beyaz Elbise",
         price: 449.99,
         image: "images/urunler/dress/dısney-dres.jpg",
+        size: ["S","M","L"],
         category: "dress"
       },
       {
@@ -157,6 +176,7 @@ const products = [
         name: "Denim Elbise",
         price: 569.99,
         image: "images/urunler/dress/denim-dres.jpg",
+        size: ["S","M","L"],
         category: "dress"
       },
       {
@@ -165,6 +185,7 @@ const products = [
         name: "Bağlamalı Beyaz Elbise",
         price: 779.99,
         image: "images/urunler/dress/baglama-beyaz-dres.jpg",
+        size: ["S","M","L"],
         category: "dress"
       },
       {
@@ -173,6 +194,7 @@ const products = [
         name: "Düşük Omuz Mavi Elbise",
         price: 579.99,
         image: "images/urunler/dress/dusuk-omuz-mavi-dres.jpg",
+        size: ["S","M","L"],
         category: "dress"
       },
       {
@@ -181,6 +203,7 @@ const products = [
         name: "Madonna Yaka Mavi Elbise",
         price: 679.99,
         image: "images/urunler/dress/madonna-yaka-mavi-dres.jpg",
+        size: ["S","M","L"],
         category: "dress"
       },
       {
@@ -189,6 +212,7 @@ const products = [
         name: "Kemerli Antrasit Elbise",
         price: 379.99,
         image: "images/urunler/dress/kemerli-tensel-antrasit-dres.jpg",
+        size: ["S","M","L"],
         category: "dress"
       },
       {
@@ -197,6 +221,7 @@ const products = [
         name: "Kemerli Haki Elbise",
         price: 379.99,
         image: "images/urunler/dress/kemerli-tensel-haki-dres.jpg",
+        size: ["S","M","L"],
         category: "dress"
       },
       {
@@ -205,6 +230,7 @@ const products = [
         name: "Siyah Kaşkorse Elbise",
         price: 549.99,
         image: "images/urunler/dress/siyah-kaskorse-dres.jpg",
+        size: ["S","M","L"],
         category: "dress"
       },
       {
@@ -213,6 +239,7 @@ const products = [
         name: "Straplez Denim Elbise",
         price: 789.99,
         image: "images/urunler/dress/straplez-kot-dres.jpg",
+        size: ["S","M","L"],
         category: "dress"
       },
       {
@@ -221,6 +248,7 @@ const products = [
         name: "Uzun Kollu Dantel Beyaz Elbise",
         price: 599.99,
         image: "images/urunler/dress/uzunkollu-dantel-beyaz-dres.jpg",
+        size: ["S","M","L"],
         category: "dress"
       },
       {
@@ -229,6 +257,7 @@ const products = [
         name: "Bej Kürk Ceket",
         price: 799.99,
         image: "images/urunler/jackets/BejKurkCeket.jpg",
+        size: ["S","M","L"],
         category: "jackets"
       },
       {
@@ -237,6 +266,7 @@ const products = [
         name: "Bej Kuşaklı Ceket",
         price: 699.99,
         image: "images/urunler/jackets/BejKusaklıCeket.jpg",
+        size: ["S","M","L"],
         category: "jackets"
       },
       {
@@ -245,6 +275,7 @@ const products = [
         name: "Beyaz Crop Ceket",
         price: 499.99,
         image: "images/urunler/jackets/BeyazCropCeket.jpg",
+        size: ["S","M","L"],
         category: "jackets"
       },
       {
@@ -253,6 +284,7 @@ const products = [
         name: "Siyah Çizgili Oversize Ceket",
         price: 549.99,
         image: "images/urunler/jackets/CizgiliOversizeCeket.jpg",
+        size: ["S","M","L"],
         category: "jackets"
       },
       {
@@ -261,6 +293,7 @@ const products = [
         name: "Mavi Denim Ceket",
         price: 599.99,
         image: "images/urunler/jackets/DenimCeket.jpg",
+        size: ["S","M","L"],
         category: "jackets"
       },
       {
@@ -269,6 +302,7 @@ const products = [
         name: "Kahve Deri Ceket",
         price: 799.99,
         image: "images/urunler/jackets/KahveDeriCeket.jpg",
+        size: ["S","M","L"],
         category: "jackets"
       },
       {
@@ -277,6 +311,7 @@ const products = [
         name: "Kahve Kısa Ceket",
         price: 499.99,
         image: "images/urunler/jackets/KahveKısaCeket.jpg",
+        size: ["S","M","L"],
         category: "jackets"
       },
       {
@@ -285,6 +320,7 @@ const products = [
         name: "Lacivert Belden Oturmalı Ceket",
         price: 699.99,
         image: "images/urunler/jackets/LacivertBlazer.jpg",
+        size: ["S","M","L"],
         category: "jackets"
       },
       {
@@ -293,6 +329,7 @@ const products = [
         name: "Leopar Desenli Ceket",
         price: 899.99,
         image: "images/urunler/jackets/LeoparCeket.jpg",
+        size: ["S","M","L"],
         category: "jackets"
       },
       {
@@ -301,6 +338,7 @@ const products = [
         name: "Belden Oturmalı Denim Ceket",
         price: 699.99,
         image: "images/urunler/jackets/OturanDenim.jpg",
+        size: ["S","M","L"],
         category: "jackets"
       },
       {
@@ -309,6 +347,7 @@ const products = [
         name: "Çizgili Kumaş Pantolon",
         price: 449.99,
         image: "images/urunler/pants/KumasPantolon1.jpg",
+        size: ["S","M","L"],
         category: "pants"
       },
       {
@@ -317,6 +356,7 @@ const products = [
         name: "Beyaz Keten Pantolon",
         price: 499.99,
         image: "images/urunler/pants/KetenPantolon1.jpg",
+        size: ["S","M","L"],
         category: "pants"
       },
       {
@@ -325,6 +365,7 @@ const products = [
         name: "Pembe Kumaş Pantolon",
         price: 549.99,
         image: "images/urunler/pants/PembeKPantolon1.jpg",
+        size: ["S","M","L"],
         category: "pants"
       },
       {
@@ -333,6 +374,7 @@ const products = [
         name: "Kahve Palazzo Pantolon",
         price: 549.99,
         image: "images/urunler/pants/KahvePalazzoP1.jpg",
+        size: ["S","M","L"],
         category: "pants"
       },
       {
@@ -341,6 +383,7 @@ const products = [
         name: "Leopar Desenli Jean",
         price: 599.99,
         image: "images/urunler/pants/LeoparJean1.jpg",
+        size: ["S","M","L"],
         category: "pants"
       },
       {
@@ -349,6 +392,7 @@ const products = [
         name: "Deri Pantolon",
         price: 599.99,
         image: "images/urunler/pants/DeriPantolon1.jpg",
+        size: ["S","M","L"],
         category: "pants"
       },
       {
@@ -357,6 +401,7 @@ const products = [
         name: "Eskitme Wide Jean",
         price: 499.99,
         image: "images/urunler/pants/EskitmeJean1.jpg",
+        size: ["S","M","L"],
         category: "pants"
       },
       {
@@ -365,6 +410,7 @@ const products = [
         name: "İspanyol Paça Beyaz Jean",
         price: 499.99,
         image: "images/urunler/pants/BeyazJean1.jpg",
+        size: ["S","M","L"],
         category: "pants"
       },
       {
@@ -373,6 +419,7 @@ const products = [
         name: "Pudra Pantolon",
         price: 449.99,
         image: "images/urunler/pants/PudraPantolon.jpg",
+        size: ["S","M","L"],
         category: "pants"
       },
       {
@@ -381,22 +428,25 @@ const products = [
         name: "Antrasit Pantolon",
         price: 449.99,
         image: "images/urunler/pants/AntrasitPantolon.jpg",
+        size: ["S","M","L"],
         category: "pants"
       },
       {
         id: 49,
         link: "shirts.html",
-        name: "Oversize Gömlek",
+        name: "Oversize Beyaz Gömlek",
         price: 349.99,
         image: "images/urunler/shirts/oversize-beyaz-shirt.jpg",
+        size: ["S","M","L"],
         category: "shirts"
       },
       {
         id: 50,
         link: "shirts.html",
-        name: "Overize Pembe Gömlek",
+        name: "Oversize Pembe Gömlek",
         price: 349.99,
         image: "images/urunler/shirts/pembe-shirt.jpg",
+        size: ["S","M","L"],
         category: "shirts"
       },
       {
@@ -405,6 +455,7 @@ const products = [
         name: "Oversize Kahverengi Gömlek",
         price: 349.99,
         image: "images/urunler/shirts/kahve-shirt.jpg",
+        size: ["S","M","L"],
         category: "shirts"
       },
       {
@@ -413,6 +464,7 @@ const products = [
         name: "Haki Gömlek",
         price: 489.99,
         image: "images/urunler/shirts/pensli-haki-shirt.jpg",
+        size: ["S","M","L"],
         category: "shirts"
       },
       {
@@ -421,6 +473,7 @@ const products = [
         name: "Bağlama Siyah Gömlek",
         price: 429.99,
         image: "images/urunler/shirts/baglama-siyah-shirt.jpg",
+        size: ["S","M","L"],
         category: "shirts"
       },
       {
@@ -429,6 +482,7 @@ const products = [
         name: "Kot Gömlek",
         price: 519.99,
         image: "images/urunler/shirts/kot-shirt.jpg",
+        size: ["S","M","L"],
         category: "shirts"
       },
       {
@@ -437,6 +491,7 @@ const products = [
         name: "Mavi Çizgili Gömlek",
         price: 379.99,
         image: "images/urunler/shirts/cizgili-mavi-shirt.jpg",
+        size: ["S","M","L"],
         category: "shirts"
       },
       {
@@ -445,6 +500,7 @@ const products = [
         name: "Korse Siyah Gömlek",
         price: 429.99,
         image: "images/urunler/shirts/korse-siyah-shirt.jpg",
+        size: ["S","M","L"],
         category: "shirts"
       },
       {
@@ -453,6 +509,7 @@ const products = [
         name: "Gri Gömlek",
         price: 359.99,
         image: "images/urunler/shirts/gri-shirt.jpg",
+        size: ["S","M","L"],
         category: "shirts"
       },
       {
@@ -461,6 +518,7 @@ const products = [
         name: "Oversize Siyah Gömlek",
         price: 349.99,
         image: "images/urunler/shirts/oversize-siyah-shirt.jpg",
+        size: ["S","M","L"],
         category: "shirts"
       },
       {
@@ -469,6 +527,7 @@ const products = [
         name: "Beyaz Kot Şort",
         price: 399.99,
         image: "images/urunler/shorts/BeyazKotSort.jpg",
+        size: ["S","M","L"],
         category: "shorts"
       },
       {
@@ -477,6 +536,7 @@ const products = [
         name: "Mavi Kot Şort",
         price: 399.99,
         image: "images/urunler/shorts/MaviKotSort.jpg",
+        size: ["S","M","L"],
         category: "shorts"
       },
       {
@@ -485,6 +545,7 @@ const products = [
         name: "Bermuda Şort",
         price: 449.99,
         image: "images/urunler/shorts/BermudaSort.jpg",
+        size: ["S","M","L"],
         category: "shorts"
       },
       {
@@ -493,6 +554,7 @@ const products = [
         name: "Beyaz Keten Şort",
         price: 449.99,
         image: "images/urunler/shorts/BeyazKetenSort.jpg",
+        size: ["S","M","L"],
         category: "shorts"
       },
       {
@@ -501,6 +563,7 @@ const products = [
         name: "Yırtık Kot Şort",
         price: 449.99,
         image: "images/urunler/shorts/YırtıkKotSort.jpg",
+        size: ["S","M","L"],
         category: "shorts"
       },
       {
@@ -509,6 +572,7 @@ const products = [
         name: "Keten Şort",
         price: 499.99,
         image: "images/urunler/shorts/KetenSort.JPG",
+        size: ["S","M","L"],
         category: "shorts"
       },
       {
@@ -517,6 +581,7 @@ const products = [
         name: "Siyah Kot Şort",
         price: 399.99,
         image: "images/urunler/shorts/SiyahSort.jpg",
+        size: ["S","M","L"],
         category: "shorts"
       },
       {
@@ -525,6 +590,7 @@ const products = [
         name: "Bordo Şort",
         price: 349.99,
         image: "images/urunler/shorts/BordoSort.jpg",
+        size: ["S","M","L"],
         category: "shorts"
       },
       {
@@ -533,6 +599,7 @@ const products = [
         name: "Mavi Şort",
         price: 349.99,
         image: "images/urunler/shorts/MaviSort.jpg",
+        size: ["S","M","L"],
         category: "shorts"
       },
       {
@@ -541,6 +608,7 @@ const products = [
         name: "Keten Pudra Şort",
         price: 399.99,
         image: "images/urunler/shorts/PudraSort.jpg",
+        size: ["S","M","L"],
         category: "shorts"
       },
       {
@@ -549,6 +617,7 @@ const products = [
         name: "Katlı Mini Etek",
         price: 449.99,
         image: "images/urunler/skirts/KatlıMiniEtek.jpg",
+        size: ["S","M","L"],
         category: "skirts"
       },
       {
@@ -557,6 +626,7 @@ const products = [
         name: "Uzun Yırtmaçlı Etek",
         price: 499.99,
         image: "images/urunler/skirts/UzunYırtmaclıEtek.jpg",
+        size: ["S","M","L"],
         category: "skirts"
       },
       {
@@ -565,6 +635,7 @@ const products = [
         name: "Kahve Deri Mini Etek",
         price: 549.99,
         image: "images/urunler/skirts/DeriMiniEtek.jpg",
+        size: ["S","M","L"],
         category: "skirts"
       },
       {
@@ -573,6 +644,7 @@ const products = [
         name: "Tüllü Mini Etek",
         price: 599.99,
         image: "images/urunler/skirts/UzunTülEtek.jpg",
+        size: ["S","M","L"],
         category: "skirts"
       },
       {
@@ -581,6 +653,7 @@ const products = [
         name: "Beyaz Mini Tül Etek",
         price: 599.99,
         image: "images/urunler/skirts/MiniTulEtek.jpg",
+        size: ["S","M","L"],
         category: "skirts"
       },
       {
@@ -589,6 +662,7 @@ const products = [
         name: "Siyah Fırfırlı Mini Etek",
         price: 499.99,
         image: "images/urunler/skirts/FırfırlıMiniEtek.jpg",
+        size: ["S","M","L"],
         category: "skirts"
       },
       {
@@ -597,6 +671,7 @@ const products = [
         name: "Mini Bordo Etek",
         price: 399.99,
         image: "images/urunler/skirts/MiniBordoEtek.jpg",
+        size: ["S","M","L"],
         category: "skirts"
       },
       {
@@ -605,6 +680,7 @@ const products = [
         name: "Mini Kot Etek",
         price: 499.99,
         image: "images/urunler/skirts/MiniKotEtek.jpg",
+        size: ["S","M","L"],
         category: "skirts"
       },
       {
@@ -613,6 +689,7 @@ const products = [
         name: "Uzun Lacivert Etek",
         price: 449.99,
         image: "images/urunler/skirts/UzunLacivertEtek.jpg",
+        size: ["S","M","L"],
         category: "skirts"
       },
       {
@@ -621,6 +698,7 @@ const products = [
         name: "Yeşil Pileli Etek",
         price: 449.99,
         image: "images/urunler/skirts/PileliYesilEtek.jpg",
+        size: ["S","M","L"],
         category: "skirts"
       },
       {
@@ -629,6 +707,7 @@ const products = [
         name: "Antrasit Maxi Trençkot",
         price: 999.99,
         image: "images/urunler/trenchcoats/AntrasitMaxiTrenc.jpg",
+        size: ["S","M","L"],
         category: "trenchcoats"
       },
       {
@@ -637,6 +716,7 @@ const products = [
         name: "Bej Maxi Trençkot",
         price: 999.99,
         image: "images/urunler/trenchcoats/BejMaxiTrenc.jpg",
+        size: ["S","M","L"],
         category: "trenchcoats"
       },
       {
@@ -645,6 +725,7 @@ const products = [
         name: "Deri Maxi Trençkot",
         price: 1499.99,
         image: "images/urunler/trenchcoats/DeriMaxiTrenc.jpg",
+        size: ["S","M","L"],
         category: "trenchcoats"
       },
       {
@@ -653,6 +734,7 @@ const products = [
         name: "Haki Maxi Trençkot",
         price: 999.99,
         image: "images/urunler/trenchcoats/HakiMaxiTrenc.jpg",
+        size: ["S","M","L"],
         category: "trenchcoats"
       },
       {
@@ -661,6 +743,7 @@ const products = [
         name: "Antrasit Crop Trençkot",
         price: 699.99,
         image: "images/urunler/trenchcoats/AntrasitCropTrenc.jpg",
+        size: ["S","M","L"],
         category: "trenchcoats"
       },
       {
@@ -669,6 +752,7 @@ const products = [
         name: "Bordo Crop Trençkot",
         price: 699.99,
         image: "images/urunler/trenchcoats/BordoCropTrenc.jpg",
+        size: ["S","M","L"],
         category: "trenchcoats"
       },
       {
@@ -677,6 +761,7 @@ const products = [
         name: "Orta Boy Denim Trençkot",
         price: 999.99,
         image: "images/urunler/trenchcoats/DenimTrenc.jpg",
+        size: ["S","M","L"],
         category: "trenchcoats"
       },
       {
@@ -685,6 +770,7 @@ const products = [
         name: "Orta Boy Deri Trençkot",
         price: 999.99,
         image: "images/urunler/trenchcoats/DeriOrtaTrenc.jpg",
+        size: ["S","M","L"],
         category: "trenchcoats"
       },
       {
@@ -693,6 +779,7 @@ const products = [
         name: "Haki Orta Boy Trençkot",
         price: 999.99,
         image: "images/urunler/trenchcoats/HakiOrtaTrenc.jpg",
+        size: ["S","M","L"],
         category: "trenchcoats"
       },
       {
@@ -701,7 +788,26 @@ const products = [
         name: "Lacivert Crop Trençkot",
         price: 699.99,
         image: "images/urunler/trenchcoats/LacivertCropTrenc.jpg",
+        size: ["S","M","L"],
         category: "trenchcoats"
-      }
+      },
+      {
+        id: 89,
+        link: "blouse.html",
+        name: "Kayık Yaka Beyaz Bluz",
+        price: 329.99,
+        image: "images/urunler/blouse/kayıkyaka-beyaz-blouse.jpg",
+        size: ["S","M","L"],
+        category: "blouse"
+      },
+      {
+        id: 90,
+        link: "blouse.html",
+        name: "Straplez Siyah Bluz",
+        price: 419.99,
+        image: "images/urunler/blouse/straplez-siyah-blouse.jpg",
+        size: ["S","M","L"],
+        category: "blouse"
+      },
   ];
   
