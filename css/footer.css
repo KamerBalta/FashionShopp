@@ -98,6 +98,29 @@ footer .copyrights a:hover {
     color: #AF8D5F; /* Hoverda renk değişimi */
 }
 
+/* Sosyal Medya İkonları */
+.footer-social {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.footer-social img {
+    width: 28px;
+    height: 28px;
+    
+   
+}
+
+
+.footer-social a:hover img {
+    transform: scale(1.1);
+    filter: brightness(0.8) saturate(0.5);
+}
+
+
 /* === Responsive === */
 @media (max-width: 768px) {
     footer .container.main-footer {
