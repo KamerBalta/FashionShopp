@@ -1,40 +1,55 @@
-// Tüm kalp ikonlarını seç
-document.querySelectorAll('.favorite-icon').forEach(icon => {
-  icon.addEventListener('click', () => {
-    // Kalbin favoride olup olmadığını kontrol et
-    const isFavorited = icon.classList.toggle('favorited');
+document.querySelectorAll(".favorite-icon").forEach(button => {
+  const productId = parseInt(button.dataset.id);
 
-    // Rengi değiştir (favorited class'ına göre)
-    icon.style.color = isFavorited ? '#e74c3c' : '#ccc';
+  // Sayfa yüklenince butonun rengini ayarla
+  let wishlist = JSON.parse(localStorage.getItem("wishlist")) || [];
+  if (wishlist.some(item => item.id === productId)) {
+    button.classList.add("favorited");
+  }
 
-    // Mesaj göster
-    showMessage(isFavorited ? 'Favorilere eklendi' : 'Favorilerden çıkarıldı');
+  button.addEventListener("click", () => {
+    const card = button.closest(".product-card");
+    const name = card.querySelector("h3 a").innerText;
+    const priceText = card.querySelector("p").innerText;
+    const price = parseFloat(priceText.replace(" TL", "").replace(",", "."));
+    const image = card.querySelector("img").getAttribute("src");
+
+    const selectedProduct = {
+      id: productId,
+      name: name,
+      price: price,
+      image: image
+    };
+
+    let wishlist = JSON.parse(localStorage.getItem("wishlist")) || [];
+
+    const index = wishlist.findIndex(item => item.id === productId);
+    if (index !== -1) {
+      // Zaten favoride, çıkar
+      wishlist.splice(index, 1);
+      button.classList.remove("favorited");
+      localStorage.setItem("wishlist", JSON.stringify(wishlist));
+      showMessage("Ürün favorilerden çıkarıldı.");
+    } else {
+      // Favoriye ekle
+      wishlist.push(selectedProduct);
+      button.classList.add("favorited");
+      localStorage.setItem("wishlist", JSON.stringify(wishlist));
+      showMessage("Ürün favorilere eklendi.");
+    }
   });
 });
 
-//sepete ekle kısmı
-  document.querySelectorAll('.add-to-cart').forEach(icon => {
-    icon.addEventListener('click', () => {
-        //buraya veritabanına ürün ekleme/ çıkarma fetch isteği eklenecek
-      // sepete eklenip eklenmediğini kontrol et
-      const isActive = icon.classList.toggle('active');
-  
-      // Mesaj göster
-      showMessage(isActive ? 'Sepete Eklendi' : 'Sepetten çıkarıldı');
-    });
-  });
-  
-  // Mesaj kutusu oluştur ve ekrana yerleştir
-  function showMessage(text) {
-    const msg = document.createElement('div');
-    msg.className = 'toast-message';
-    msg.innerText = text;
-    document.body.appendChild(msg);
-  
-    // 2 saniye sonra otomatik sil
-    setTimeout(() => {
-      msg.remove();
-    }, 2000);
-  }
-  
-  
+// Tost mesaj fonksiyonu
+function showMessage(text) {
+  const msg = document.createElement('div');
+  msg.className = 'toast-message';
+  msg.innerText = text;
+  document.body.appendChild(msg);
+
+  setTimeout(() => {
+    msg.remove();
+  }, 2000);
+}
+
+

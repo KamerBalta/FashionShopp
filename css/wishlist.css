@@ -1,0 +1,73 @@
+/* Favori Ürün Konteyneri */
+#wishlist-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  padding: 0 20px;
+}
+
+.cart-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+}
+
+.cart-card img {
+  width: 100px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+.cart-card div {
+  flex-grow: 1;
+  padding-left: 10px;
+}
+
+.cart-card h4 {
+  margin: 0 0 8px 0;
+}
+.remove-btn {
+  background-color:  #AF8D5F;;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.remove-btn:hover {
+  background-color: #8a6e45;
+}
+.cart-card a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Toast Bildirim */
+.toast-message {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  font-size: 14px;
+  z-index: 1000;
+  opacity: 0.95;
+}
+
+/* Responsive için ek koruma */
+@media screen and (max-width: 600px) {
+  .cart-card {
+    padding: 12px;
+  }
+
+  .remove-btn {
+    padding: 6px 12px;
+    font-size: 13px;
+  }
+}
