@@ -1,0 +1,114 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background-color: #f8f6f2;
+}
+
+.contact-wrapper {
+  display: flex;
+  flex-wrap: nowrap; /* Artık yan yana sabit kalacak */
+  justify-content: center;
+  align-items: stretch;
+  min-height: 100vh;
+  background-color: #fffaf3;
+}
+
+.contact-image {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f4f4f4;
+}
+
+.contact-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Görsel tam kaplasın ama taşmasın */
+}
+
+.contact-form-box {
+  flex: 1;
+  max-width: 600px;
+  background: #ffffff;
+  padding: 40px;
+  border-left: 1px solid #eee;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+}
+
+.contact-form-box h2 {
+  margin-top: 0;
+  font-size: 28px;
+  color: #333;
+}
+
+.contact-form-box p {
+  color: #777;
+  margin-bottom: 20px;
+}
+
+.contact-form-box input,
+.contact-form-box select,
+.contact-form-box textarea {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.contact-form-box button {
+  background-color: #000;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.contact-form-box button:hover {
+  background-color: #444;
+}
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup-content {
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.popup-content p {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.popup-content button {
+  padding: 10px 20px;
+  background-color: #000;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.popup-content button:hover {
+  background-color: #444;
+}

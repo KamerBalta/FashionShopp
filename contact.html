@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>İletişim - FashionShop</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+
+    <!-- Stil dosyaları -->
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/user.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <header class="main-header">
+      <div class="main-header">
+        <div class="container">
+          <div class="header-flex">
+            <button class="menu-toggle" aria-label="Menüyü Aç/Kapat">
+              &#9776;
+            </button>
+            <div class="logo">
+              <a href="index.html">
+                <img src="images/logo.png" alt="FashionShop Logo" />
+              </a>
+            </div>
+            <nav class="main-nav" aria-label="Ana Menü">
+              <ul class="menu">
+                <li class="dropdown">
+                  <a href="#">ÜST GİYİM</a>
+                  <ul class="submenu">
+                    <li><a href="blouse.html">Bluz & Body</a></li>
+                    <li><a href="dress.html">Elbise</a></li>
+                    <li><a href="shirts.html">Gömlek</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="#">ALT GİYİM</a>
+                  <ul class="submenu">
+                    <li><a href="pants.html">Pantolon</a></li>
+                    <li><a href="skirt.html">Etek</a></li>
+                    <li><a href="shorts.html">Şort</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="#">DIŞ GİYİM</a>
+                  <ul class="submenu">
+                    <li><a href="jackets.html">Ceket</a></li>
+                    <li><a href="coats.html">Mont & Kaban</a></li>
+                    <li><a href="trenchcoats.html">Trençkot</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+            <!-- SAĞ: HESAP MENÜ -->
+            <div class="hesap-menu">
+              <a href="#" id="searchIcon"
+                ><img src="images/search.png" alt="Arama"
+              /></a>
+              <a href="#" id="openLogin"
+                ><img src="images/user.png" alt="Hesap"
+              /></a>
+              <a href="#"><img src="images/wishlist.png" alt="Favoriler" /></a>
+              <a href="#"><img src="images/market.png" alt="Sepet" /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!------------ Giriş paneli (sidebar) --------------------->
+      <div id="loginSidebar" class="sidebar">
+        <button id="closeLogin" class="close-btn">×</button>
+        <form id="loginForm">
+          <h2>Giriş Yap</h2>
+          <label for="email">E-posta:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="password">Şifre:</label>
+          <input type="password" id="password" name="password" required />
+
+          <button type="submit">Giriş</button>
+        </form>
+      </div>
+
+      <!-- Arama Kutusu Overlay -->
+      <!-- Arama Kutusu Overlay -->
+      <div class="search-overlay" id="searchOverlay">
+        <div class="search-container">
+          <input
+            type="text"
+            placeholder="Ürün, kategori ara..."
+            id="searchInput"
+          />
+          <button id="closeSearch" aria-label="Kapat">×</button>
+        </div>
+        <div id="searchResults" class="search-results"></div>
+        <!-- BURAYA EKLENDİ -->
+      </div>
+    </header>
+
+    <!-- CONTACT CONTENT -->
+    <main>
+      <section class="contact-wrapper">
+        <div class="contact-image">
+          <img src="images/contact.png" alt="İletişim Görseli" />
+        </div>
+        <div class="contact-form-box">
+          <h2>Bize Ulaşın</h2>
+          <p>
+            Size yardımcı olmaktan memnuniyet duyarız. Lütfen formu eksiksiz
+            doldurun.
+          </p>
+
+          <!-- FORM -->
+          <form onsubmit="showPopup(event)">
+            <input type="text" placeholder="Adınız Soyadınız" required />
+            <input type="email" placeholder="E-posta Adresiniz" required />
+            <select required>
+              <option disabled selected>Yardım Türü Seçin</option>
+              <option value="order">Sipariş Sorusu</option>
+              <option value="return">İade/Değişim</option>
+              <option value="info">Ürün Bilgisi</option>
+            </select>
+            <textarea
+              rows="5"
+              placeholder="Mesajınızı yazın..."
+              required
+            ></textarea>
+            <button type="submit">Gönder</button>
+          </form>
+
+          <!-- POPUP -->
+          <div id="popup" class="popup">
+            <div class="popup-content">
+              <p>Mesajınız başarıyla gönderildi!</p>
+              <button onclick="closePopup()">Tamam</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!--HEADER BİTİŞ-->
+
+    <!-- FOOTER BAŞLANGICI -->
+    <footer class="wd-footer footer-container color-scheme-light">
+      <div class="container main-footer">
+        <!-- Footer içeriği için grid yapı -->
+        <aside
+          class="footer-sidebar widget-area wd-grid-g"
+          style="--wd-col-lg: 12; --wd-gap-lg: 30px; --wd-gap-sm: 20px"
+        >
+          <!-- 1. Sütun: İletişim Bilgileri -->
+          <div
+            class="footer-column wd-grid-col"
+            style="--wd-col-xs: 12; --wd-col-md: 6; --wd-col-lg: 3"
+          >
+            <div class="wpb-content-wrapper">
+              <p>
+                Bizlere aşağıdaki iletişim bilgilerinden ulaşabilirsiniz. En
+                kısa sürede geri dönüş sağlayacağız.
+              </p>
+              <ul class="wd-list">
+                <li>
+                  <img src="images/navigation.png" width="14" />
+                  <span>Ataşehir/İSTANBUL</span>
+                </li>
+                <li>
+                  <img src="images/smartphone.png" width="14" />
+                  <a href="tel:+08503083706">0 (850) 308 37 06</a>
+                </li>
+                <li>
+                  <img src="images/mail.png" width="14" />
+                  <a href="mailto:info@fashionshop.com">info@fashionshop.com</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div
+            class="footer-column wd-grid-col"
+            style="--wd-col-xs: 12; --wd-col-md: 6; --wd-col-lg: 3"
+          >
+            <h5>Önemli Bilgiler</h5>
+            <ul>
+              <li><a href="Pd.html">Ödeme ve Teslimat</a></li>
+              <li><a href="Cookies.html">Çerez Politikamız</a></li>
+              <li><a href="DSA.html">Mesafeli Satış Sözleşmesi</a></li>
+              <li><a href="cancellation.html">İptal ve İade Koşulları</a></li>
+              <li><a href="Psp.html">Gizlilik ve Güvenlik</a></li>
+              <li><a href="question.html">Sıkça Sorulan Sorular</a></li>
+              <li><a href="about.html">Hakkımızda</a></li>
+              <li><a href="contact.html">Bize Ulaşın</a></li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+      <div class="footer-social">
+        <a href="https://www.instagram.com" target="_blank"
+          ><img src="images/instagram.png" alt="Instagram"
+        /></a>
+        <a href="https://www.facebook.com" target="_blank"
+          ><img src="images/facebook.png" alt="Facebook"
+        /></a>
+        <a href="https://www.twitter.com" target="_blank"
+          ><img src="images/twitter.png" alt="X"
+        /></a>
+      </div>
+      <div class="copyrights">
+        <small
+          >© 2025 - FashionShop | Media Agency:
+          <a href="https://kaiajans.com/"><strong>KAEM Ajans</strong></a></small
+        >
+      </div>
+    </footer>
+
+    <!-- JAVASCRIPT Dosyaları -->
+    <script src="js/products.js"></script>
+    <script src="js/search.js"></script>
+    <script src="js/user.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/contact.js"></script>
+  </body>
+</html>
