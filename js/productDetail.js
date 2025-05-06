@@ -66,22 +66,29 @@ if (favoriteButton) {
   });
 }
 
-// Sepete Ekle butonu işlevi
-document.querySelectorAll('.add-to-cart').forEach(icon => {
-  icon.addEventListener('click', () => {
-    const isActive = icon.classList.toggle('active');
-    const selectedSize = document.getElementById("size-select").value;
+// Sepete Ekle butonu işlevi (Güncellendi)
+document.querySelector('.add-to-cart').addEventListener('click', () => {
+  const selectedSize = document.getElementById("size-select").value;
+  let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
-    if (isActive) {
-      // Seçilen bedenle ürünü ekle
-      addToCart({ ...selectedProduct, size: selectedSize });
-      showMessage("Sepete Eklendi");
-    } else {
-      removeFromCart(selectedProduct.id, selectedSize);
-      showMessage("Sepetten Çıkarıldı");
-    }
-  });
+  const exists = cart.some(p => p.id === selectedProduct.id && p.size === selectedSize);
+
+  if (!exists) {
+    const productToAdd = {
+      id: selectedProduct.id,
+      name: selectedProduct.name,
+      price: selectedProduct.price,
+      image: selectedProduct.image,
+      size: selectedSize
+    };
+    cart.push(productToAdd);
+    localStorage.setItem("cart", JSON.stringify(cart));
+    showMessage("Sepete eklendi.");
+  } else {
+    showMessage("Bu ürün ve beden zaten sepette.");
+  }
 });
+
 
 // Sepete ürün ekle
 function addToCart(product) {
@@ -94,12 +101,6 @@ function addToCart(product) {
   }
 }
 
-// Sepetten ürün çıkar
-function removeFromCart(id, size) {
-  let cart = JSON.parse(localStorage.getItem("cart")) || [];
-  cart = cart.filter(p => !(p.id === id && p.size === size));
-  localStorage.setItem("cart", JSON.stringify(cart));
-}
 
 // Mesaj kutusu oluştur ve ekrana yerleştir
 function showMessage(text) {
