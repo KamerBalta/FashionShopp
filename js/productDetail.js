@@ -34,6 +34,7 @@ if (selectedProduct) {
 // Favorilere ekleme ve çıkarma işlevi
 const favoriteButton = document.querySelector(".favorite-icon");
 
+
 if (favoriteButton) {
   const wishlist = JSON.parse(localStorage.getItem("wishlist")) || [];
 
@@ -66,6 +67,7 @@ if (favoriteButton) {
   });
 }
 
+
 // Sepete Ekle butonu işlevi (Güncellendi)
 document.querySelector('.add-to-cart').addEventListener('click', () => {
   const selectedSize = document.getElementById("size-select").value;
@@ -90,6 +92,7 @@ document.querySelector('.add-to-cart').addEventListener('click', () => {
 });
 
 
+
 // Sepete ürün ekle
 function addToCart(product) {
   let cart = JSON.parse(localStorage.getItem("cart")) || [];
@@ -100,6 +103,7 @@ function addToCart(product) {
     localStorage.setItem("cart", JSON.stringify(cart));
   }
 }
+
 
 
 // Mesaj kutusu oluştur ve ekrana yerleştir
