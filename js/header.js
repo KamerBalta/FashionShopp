@@ -3,12 +3,12 @@ document.addEventListener("DOMContentLoaded", () => {
     const nav = document.querySelector(".main-nav");
     const dropdowns = document.querySelectorAll(".dropdown");
 
-    // Menü açma / kapama
+    // Menü açma / kapama (Hamburger menü)
     toggleButton.addEventListener("click", () => {
         nav.classList.toggle("active");
     });
 
-    // Dropdown'lar için tıklama işlemi
+    // Dropdown'lar için tıklama işlemi (Mobilde çalışacak)
     dropdowns.forEach(dropdown => {
         const link = dropdown.querySelector("a");
 
@@ -29,5 +29,24 @@ document.addEventListener("DOMContentLoaded", () => {
                 }
             }
         });
+    });
+
+    // Profil ikonuna tıklanarak profil dropdown menüsünü açma / kapama
+    const profileIcon = document.getElementById("profileIcon");
+    const profileDropdown = document.getElementById("profileDropdown");
+
+    profileIcon.addEventListener("click", function (e) {
+        e.stopPropagation(); // Bu tıklamanın, sayfa dışı tıklama işlevini engellemesini sağlar.
+        profileDropdown.style.display = (profileDropdown.style.display === "block") ? "none" : "block";
+    });
+
+    // Sayfanın başka bir yerine tıklanınca profil dropdown'ını kapatma
+    document.body.addEventListener("click", function () {
+        profileDropdown.style.display = "none";
+    });
+
+    // Profil menüsünde dropdown dışında bir yere tıklanırsa dropdown kapanmasın
+    profileDropdown.addEventListener("click", function (e) {
+        e.stopPropagation();
     });
 });
