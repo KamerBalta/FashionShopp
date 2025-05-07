@@ -7,10 +7,10 @@
   <title>Kadın Etek Modelleri-FashionShop</title>
   <link rel="icon" href="images/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="css/header.css">
-  <link rel="stylesheet" href="css/products.css">
   <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/products.css">
   <link rel="stylesheet" href="css/user.css">
-  <link rel="stylesheet" href="css/contact.css" />
+
 
 </head>
 
@@ -64,15 +64,31 @@
 
               <!-- SAĞ: HESAP MENÜ -->
               <div class="hesap-menu">
-                  <a href="#" id="searchIcon"><img src="images/search.png" alt="Arama" /></a>
-                  <a href="#" id="openLogin"><img src="images/user.png" alt="Hesap" /></a>
-                  <a href="#"><img src="images/wishlist.png" alt="Favoriler" /></a>
-                  <a href="#"><img src="images/market.png" alt="Sepet" /></a>
-              </div>
+                <!-- Arama Ikonu -->
+                <a href="#" id="searchIcon"><img src="images/search.png" alt="Arama" /></a>
+
+                <!-- Kullanıcı Ikonu -->
+                <div class="user-dropdown-container">
+                    <a href="#" id="openLogin"><img src="images/user.png" alt="Hesap" /></a>
+                    <div id="userDropdown" class="dropdown-menu">
+                        <div id="dropdownName">Kullanıcı</div>
+                        <button id="logoutBtn">Çıkış Yap</button>
+                    </div>
+                </div>
+
+
+                <!-- Favoriler ve Sepet -->
+                <a href="wishlist.html"><img src="images/wishlist.png" alt="Favoriler" /></a>
+                <a href="addCart.html"><img src="images/market.png" alt="Sepet" /></a>
+
+                <!-- Kullanıcı Profili Dropdown'ı (Başlangıçta gizli) -->
+
+            </div>
             </div>
           </div>
       </div>
 <!------------ Giriş paneli (sidebar) --------------------->
+<!-- Giriş paneli -->
 <div id="loginSidebar" class="sidebar">
   <button id="closeLogin" class="close-btn">×</button>
   <form id="loginForm">
@@ -84,10 +100,40 @@
       <input type="password" id="password" name="password" required>
 
       <button type="submit">Giriş</button>
+
+      <p style="margin-top:10px;">
+          Hesabınız yok mu?
+          <a href="#" id="openRegister">Kayıt Ol</a>
+      </p>
   </form>
 </div>
 
-<!-- Arama Kutusu Overlay -->
+<!-- Kayıt paneli -->
+<div id="registerSidebar" class="sidebar">
+  <button id="closeRegister" class="close-btn">×</button>
+  <form id="registerForm">
+      <h2>Kayıt Ol</h2>
+      <label for="newName">Ad Soyad:</label>
+      <input type="text" id="newName" name="newName" required>
+
+      <label for="newEmail">E-posta:</label>
+      <input type="email" id="newEmail" name="newEmail" required>
+
+      <label for="newPassword">Şifre:</label>
+      <input type="password" id="newPassword" name="newPassword" required>
+
+      <button type="submit">Kayıt Ol</button>
+
+      <p style="margin-top:10px;">
+          Zaten hesabınız var mı?
+          <a href="#" id="openLoginFromRegister">Giriş Yap</a>
+      </p>
+  </form>
+</div>
+
+<!-- Ortak Toast Mesajı -->
+<div id="toast" class="toast" style="display: none;"></div>
+
 <!-- Arama Kutusu Overlay -->
 <div class="search-overlay" id="searchOverlay">
   <div class="search-container">
@@ -97,7 +143,9 @@
   <div id="searchResults" class="search-results"></div> <!-- BURAYA EKLENDİ -->
 </div>
 </header>
-  
+              
+
+              
   <!-- HEADER BİTİŞ -->
 
   <!-- ANA İÇERİK: Etek Ürünleri -->
@@ -109,7 +157,7 @@
       </a>
       <h3><a href="productDetail.html?id=69"></a>Katlı Mini Etek</h3>
       <p>449.99 TL</p>
-      <button class="favorite-icon">♥</button>
+      <button class="favorite-icon" data-id="69">♥</button>
     </div>
 
     <!-- Statik Ürün Kartı 2 -->
@@ -118,7 +166,7 @@
       </a>
       <h3><a href="productDetail.html?id=70"></a> Uzun Yırtmaçlı Etek</h3>
       <p>499.99 TL</p>
-      <button class="favorite-icon">♥</button>
+      <button class="favorite-icon" data-id="70">♥</button>
     </div>
 
     <!-- Statik Ürün Kartı 3 -->
@@ -127,16 +175,16 @@
       </a>
       <h3><a href="productDetail.html?id=71"></a>Kahve Deri Mini Etek </h3>
       <p>549.99 TL</p>
-      <button class="favorite-icon">♥</button>
+      <button class="favorite-icon" data-id="71">♥</button>
     </div>
 
     <!-- Statik Ürün Kartı 4 -->
     <div class="product-card">
-      <a href="productDetail.html?id=72"><img src="images/urunler/skirts/UzunTülEtek.jpg" alt="Tüllü Mini Etek">
+      <a href="productDetail.html?id=72"><img src="images/urunler/skirts/UzunTulEtek.jpg" alt="Tüllü Mini Etek">
       </a>
       <h3><a href="productDetail.html?id=72"></a>Tüllü Mini Etek</h3>
       <p>599.99 TL</p>
-      <button class="favorite-icon">♥</button>
+      <button class="favorite-icon" data-id="72">♥</button>
     </div>
 
     <!-- Statik Ürün Kartı 5 -->
@@ -145,7 +193,7 @@
       </a>
       <h3><a href="productDetail.html?id=73"></a>Beyaz Mini Tül Etek</h3>
       <p>599.99 TL</p>
-      <button class="favorite-icon">♥</button>
+      <button class="favorite-icon" data-id="73">♥</button>
     </div>
 
     <!-- Statik Ürün Kartı 6 -->
@@ -154,7 +202,7 @@
       </a>
       <h3><a href="productDetail.html?id=74"></a>Siyah Fırfırlı Mini Etek</h3>
       <p>499.99 TL</p>
-      <button class="favorite-icon">♥</button>
+      <button class="favorite-icon" data-id="74">♥</button>
     </div>
 
     <!-- Statik Ürün Kartı 7 -->
@@ -163,7 +211,7 @@
       </a>
       <h3><a href="productDetail.html?id=75"></a>Mini Bordo Etek</h3>
       <p>399.99 TL</p>
-      <button class="favorite-icon">♥</button>
+      <button class="favorite-icon" data-id="75">♥</button>
     </div>
 
     <!-- Statik Ürün Kartı 8 -->
@@ -172,7 +220,7 @@
       </a>
       <h3><a href="productDetail.html?id=76"></a>Mini Kot Etek</h3>
       <p>499.99 TL</p>
-      <button class="favorite-icon">♥</button>
+      <button class="favorite-icon" data-id="76">♥</button>
     </div>
 
     <!-- Statik Ürün Kartı 9 -->
@@ -181,7 +229,7 @@
       </a>
       <h3><a href="productDetail.html?id=77"></a>Uzun Lacivert Etek</h3>
       <p>449.99 TL</p>
-      <button class="favorite-icon">♥</button>
+      <button class="favorite-icon" data-id="77">♥</button>
     </div>
 
     <!-- Statik Ürün Kartı 10 -->
@@ -190,7 +238,7 @@
       </a>
       <h3><a href="productDetail.html?id=78"></a>Yeşil Pileli Etek</h3>
       <p>449.99 TL</p>
-      <button class="favorite-icon">♥</button>
+      <button class="favorite-icon" data-id="78">♥</button>
     </div>
 
 
@@ -236,6 +284,19 @@
       </aside>
   </div>
 
+  <!-- SOSYAL MEDYA İKONLARI -->
+  <div class="footer-social">
+    <a href="https://www.instagram.com" target="_blank">
+        <img src="images/instagram.png" alt="Instagram">
+    </a>
+    <a href="https://www.facebook.com" target="_blank">
+        <img src="images/facebook.png" alt="Facebook">
+    </a>
+    <a href="https://www.twitter.com" target="_blank">
+        <img src="images/twitter.png" alt="X">
+    </a>
+</div>
+
   <!-- Telif Hakkı Bölümü -->
   <div class="copyrights">
       <small>© 2025 - FashionShop | Media Agency: <a href="https://kaiajans.com/"><strong>KAEM
@@ -245,10 +306,12 @@
                        
   <!-- FOOTER BİTİŞ -->
 
-  <script src="js/header.js"></script>
-  <script src="js/pants.js"></script>
-  <script src="js/user.js"></script>
-  <script src="js/contact.js"></script>
+<script src="js/products.js"></script>
+<script src="js/shirts.js"></script>
+<script src="js/search.js"></script>
+<script src="js/header.js"></script>
+<script src="js/user.js"></script>
+
 
 </body>
 
