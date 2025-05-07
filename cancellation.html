@@ -22,17 +22,17 @@
         <div class="main-header">
             <div class="container">
                 <div class="header-flex">
-    
+
                     <!-- Menü Toggle Butonu (Mobil için) -->
                     <button class="menu-toggle" aria-label="Menüyü Aç/Kapat">&#9776;</button>
-    
+
                     <!-- SOL: LOGO -->
                     <div class="logo">
                         <a href="index.html">
                             <img src="images/logo.png" alt="FashionShop Logo" />
                         </a>
                     </div>
-    
+
                     <!-- ORTA: MENÜ -->
                     <nav class="main-nav" aria-label="Ana Menü">
                         <ul class="menu">
@@ -62,34 +62,88 @@
                             </li>
                         </ul>
                     </nav>
-    
+
                     <!-- SAĞ: HESAP MENÜ -->
                     <div class="hesap-menu">
+                        <!-- Arama Ikonu -->
                         <a href="#" id="searchIcon"><img src="images/search.png" alt="Arama" /></a>
-                        <a href="#" id="openLogin"><img src="images/user.png" alt="Hesap" /></a>
+
+                        <!-- Kullanıcı Ikonu -->
+                        <div class="user-dropdown-container">
+                            <a href="#" id="openLogin"><img src="images/user.png" alt="Hesap" /></a>
+                            <div id="userDropdown" class="dropdown-menu">
+                                <div id="dropdownName">Kullanıcı</div>
+                                <button id="logoutBtn">Çıkış Yap</button>
+                            </div>
+                        </div>
+
+
+                        <!-- Favoriler ve Sepet -->
                         <a href="wishlist.html"><img src="images/wishlist.png" alt="Favoriler" /></a>
                         <a href="addCart.html"><img src="images/market.png" alt="Sepet" /></a>
+
+                        <!-- Kullanıcı Profili Dropdown'ı (Başlangıçta gizli) -->
+
                     </div>
-    
+
+
+
                 </div>
             </div>
         </div>
-        <!------------ Giriş paneli (sidebar) --------------------->
+        <!-- Giriş paneli (sidebar) -->
+        <!-- Giriş paneli -->
         <div id="loginSidebar" class="sidebar">
             <button id="closeLogin" class="close-btn">×</button>
             <form id="loginForm">
                 <h2>Giriş Yap</h2>
                 <label for="email">E-posta:</label>
                 <input type="email" id="email" name="email" required>
-    
+
                 <label for="password">Şifre:</label>
                 <input type="password" id="password" name="password" required>
-    
+
                 <button type="submit">Giriş</button>
+
+                <p style="margin-top:10px;">
+                    Hesabınız yok mu?
+                    <a href="#" id="openRegister">Kayıt Ol</a>
+                </p>
             </form>
         </div>
-    
-        <!-- Arama Kutusu Overlay -->
+
+        <!-- Kayıt paneli -->
+        <div id="registerSidebar" class="sidebar">
+            <button id="closeRegister" class="close-btn">×</button>
+            <form id="registerForm">
+                <h2>Kayıt Ol</h2>
+                <label for="newName">Ad Soyad:</label>
+                <input type="text" id="newName" name="newName" required>
+
+                <label for="newEmail">E-posta:</label>
+                <input type="email" id="newEmail" name="newEmail" required>
+
+                <label for="newPassword">Şifre:</label>
+                <input type="password" id="newPassword" name="newPassword" required>
+
+                <button type="submit">Kayıt Ol</button>
+
+                <p style="margin-top:10px;">
+                    Zaten hesabınız var mı?
+                    <a href="#" id="openLoginFromRegister">Giriş Yap</a>
+                </p>
+            </form>
+        </div>
+
+        <!-- Ortak Toast Mesajı -->
+        <div id="toast" class="toast" style="display: none;"></div>
+
+
+
+
+
+
+
         <!-- Arama Kutusu Overlay -->
         <div class="search-overlay" id="searchOverlay">
             <div class="search-container">
@@ -98,9 +152,9 @@
             </div>
             <div id="searchResults" class="search-results"></div> <!-- BURAYA EKLENDİ -->
         </div>
-    
-    
-    
+
+
+
     </header>
     <!-- HEADER BİTİŞ -->
 
