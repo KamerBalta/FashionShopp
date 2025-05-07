@@ -77,6 +77,7 @@ if (cart.length === 0) {
 }
 // Siparişi Tamamla Butonu
 if (cart.length !== 0) {
+
   const completeOrderBtn = document.createElement("button");
   completeOrderBtn.textContent = "Siparişi Tamamla";
   completeOrderBtn.className = "complete-order-btn";
@@ -93,7 +94,6 @@ if (cart.length !== 0) {
   totalPriceDiv.appendChild(completeOrderBtn);
 }
 
-  
 
 // Toast mesajı (varsa tekrar yazmana gerek yok)
 function showMessage(text) {
