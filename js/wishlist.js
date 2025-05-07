@@ -6,7 +6,7 @@ let wishlist = JSON.parse(localStorage.getItem("wishlist")) || [];
 console.log(wishlist);
 
 if (wishlist.length === 0) {
-  wishlistContainer.innerHTML = "<p>Favori ürün yok.</p>";
+  wishlistContainer.innerHTML = "<p>Favori ürün bulunmuyor.</p>";
 } else {
   wishlist.forEach((product, index) => {
     const card = document.createElement("div");
