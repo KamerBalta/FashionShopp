@@ -77,17 +77,23 @@ if (cart.length === 0) {
 }
 // Siparişi Tamamla Butonu
 if (cart.length !== 0) {
-    const completeOrderBtn = document.createElement("button");
-    completeOrderBtn.textContent = "Siparişi Tamamla";
-    completeOrderBtn.className = "complete-order-btn";
-  
-    completeOrderBtn.addEventListener("click", () => {
-      showMessage("Ödeme sayfasına yönlendiriliyorsunuz...");
-    });
-  
-    totalPriceDiv.appendChild(completeOrderBtn);
-  }
-  
+
+  const completeOrderBtn = document.createElement("button");
+  completeOrderBtn.textContent = "Siparişi Tamamla";
+  completeOrderBtn.className = "complete-order-btn";
+
+  completeOrderBtn.addEventListener("click", () => {
+    showMessage("Ödeme sayfasına yönlendiriliyorsunuz...");
+    
+    // 2 saniye sonra yönlendirme
+    setTimeout(() => {
+      window.location.href = "payment.html"; // Burada 'odeme.html' senin ödeme sayfanın adı olmalı
+    }, 2000);
+  });
+
+  totalPriceDiv.appendChild(completeOrderBtn);
+}
+
 
 // Toast mesajı (varsa tekrar yazmana gerek yok)
 function showMessage(text) {
