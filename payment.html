@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FashionShop - Ödeme</title>
+  <link rel="stylesheet" href="css/payment.css">
+</head>
+<body>
+  <div class="main-container">
+    
+    <!-- Ödeme Formu -->
+    <div class="payment-container">
+      <h2>Ödeme Bilgileri</h2>
+      <form class="payment-form" id="paymentForm">
+        <label for="name">Kart Üzerindeki İsim</label>
+        <input type="text" id="name" placeholder="Ad Soyad" required>
+
+        <label for="card-number">Kart Numarası</label>
+        <input type="text" id="card-number" placeholder="•••• •••• •••• ••••" maxlength="19" required oninput="validateCardNumber()">
+
+        <div class="row">
+          <div class="column">
+            <label for="expiry">Son Kullanma Tarihi</label>
+            <input type="text" id="expiry" placeholder="AA/YY" maxlength="5" required oninput="validateExpiry()">
+          </div>
+          <div class="column">
+            <label for="cvv">CVV</label>
+            <input type="password" id="cvv" placeholder="•••" maxlength="3" required>
+          </div>
+        </div>
+
+        <button type="submit">Ödemeyi Tamamla</button>
+      </form>
+    </div>
+
+    <!-- Adres Kayıt Formu -->
+    <div class="address-container">
+      <h2>Adres Bilgileri</h2>
+      <form id="addressForm">
+        <label for="fullname">Ad Soyad</label>
+        <input type="text" id="fullname" placeholder="Adınız Soyadınız" required>
+
+        <label for="address">Adres</label>
+        <input type="text" id="address" placeholder="Açık Adres" required>
+
+        <label for="city">Şehir</label>
+        <input type="text" id="city" placeholder="Şehir" required>
+
+        <label for="zipcode">Posta Kodu</label>
+        <input type="text" id="zipcode" placeholder="00000" maxlength="5" required>
+
+        <button type="submit">Adresi Kaydet</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Toast Mesajları -->
+  <div id="toast" class="toast"></div>
+
+  <script src="js/payment.js"></script>
+</body>
+</html>
