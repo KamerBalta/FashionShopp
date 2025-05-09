@@ -157,7 +157,7 @@ const products = [
         link: "coats.html",
         name: "Taş Renk Orta Boy Kürk",
         price: 1499.99,
-        image: "images/urunler/coats/TasOrtaKürk.jpg",
+        image: "images/urunler/coats/TasOrtaBoyKurk.jpg",
         size: ["S","M","L"],
         category: "coats"
       },
@@ -643,7 +643,7 @@ const products = [
         link: "skirt.html",
         name: "Tüllü Mini Etek",
         price: 599.99,
-        image: "images/urunler/skirts/UzunTülEtek.jpg",
+        image: "images/urunler/skirts/SiyahTulEtek.jpg",
         size: ["S","M","L"],
         category: "skirts"
       },
